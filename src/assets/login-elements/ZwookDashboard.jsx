@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ZwookDashboard2() {
+export default function ZwookDashboard({ className }) {
   return (
     <svg
       width="769"
@@ -9,7 +9,7 @@ export default function ZwookDashboard2() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
-      className="login-wrapper__dashboard"
+      className={className}
     >
       <g clip-path="url(#clip0_601_53292)">
         <rect

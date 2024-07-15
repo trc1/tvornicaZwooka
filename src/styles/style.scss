@@ -1,9 +1,16 @@
 @import "./_globals.scss";
 @import "./_tokens.scss";
 @import "./_variables.scss";
+@import "./reset";
+@import "./mixins";
+
+//pages
+@import "../pages/Login";
+
+//components
+@import "../components/Input";
 
 body {
   background-color: var(--background-primary);
   color: var(--text-primary);
-  font-weight: $font-weight-bold;
 }

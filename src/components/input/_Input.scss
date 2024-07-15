@@ -1,0 +1,13 @@
+.input-container {
+  width: 100%;
+  border: 1px solid var(--border-primary);
+  border-radius: $radius-base;
+  padding: $spacing-12;
+  @include flexbox(start, center, row, $spacing-8);
+  @include text(
+    $text-size-m,
+    $font-weight-regular,
+    $text-line-height-m,
+    var(--text-primary-placeholder)
+  );
+}
