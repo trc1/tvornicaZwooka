@@ -1,0 +1,25 @@
+.btn {
+  @include button();
+
+  &-primary {
+    background-color: var(--surface-warning);
+    &:hover {
+      background-color: var(--surface-brand);
+    }
+  }
+
+  &-outline {
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary);
+    &:hover {
+      background-color: var(--surface-primary-active);
+    }
+  }
+
+  &-small {
+    @include button(small);
+    &:hover {
+      background-color: var(--surface-primary-active);
+    }
+  }
+}

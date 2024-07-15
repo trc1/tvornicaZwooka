@@ -1,6 +1,6 @@
-@import "./_globals.scss";
-@import "./_tokens.scss";
-@import "./_variables.scss";
+@import "./globals";
+@import "./tokens";
+@import "./variables";
 @import "./reset";
 @import "./mixins";
 
@@ -9,3 +9,4 @@
 
 //components
 @import "../components/input/Input";
+@import "../components/button/Button"

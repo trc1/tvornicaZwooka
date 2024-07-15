@@ -14,3 +14,22 @@
     line-height: $line-height;
     color: $color;
   }
+
+  @mixin button($size: regular) {
+    @include flexbox(center, center, row, $spacing-8);
+    @include text(
+      $text-size-m,
+      $font-weight-regular,
+      $text-line-height-m,
+      var(--text-dark)
+    );
+    border-radius: $radius-base;
+    cursor: pointer;
+  
+    @if $size == regular {
+      padding: $spacing-16 $spacing-24;
+    } @else if $size == small {
+      padding: $spacing-8;
+    }
+
+  }

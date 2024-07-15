@@ -1,9 +1,12 @@
 import LoginDecoration from "../assets/login-elements/LoginDecoration";
 import ZwookDashboard from "../assets/login-elements/ZwookDashboard";
 import LogoIcon from "../assets/icons/LogoIcon";
-import Input from "../components/Input";
+import Input from "../components/input/Input";
 import EmailIcon from "../assets/icons/EmailIcon";
 import LockIcon from "../assets/icons/LockIcon";
+import Button from "../components/button/Button";
+import GoogleIcon from "../assets/icons/GoogleIcon";
+
 export default function Login() {
   return (
     <div className="login">
@@ -24,6 +27,13 @@ export default function Login() {
             type="password"
             placeholder="Email Address"
             icon={<LockIcon />}
+          />
+          <Button className="btn-primary" label="Login" width={100} />
+          <Button
+            className="btn-outline"
+            label="Authorize with Google"
+            width={100}
+            icon={<GoogleIcon />}
           />
         </form>
       </div>
