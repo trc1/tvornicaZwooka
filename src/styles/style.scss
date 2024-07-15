@@ -8,9 +8,4 @@
 @import "../pages/Login";
 
 //components
-@import "../components/Input";
-
-body {
-  background-color: var(--background-primary);
-  color: var(--text-primary);
-}
+@import "../components/input/Input";
