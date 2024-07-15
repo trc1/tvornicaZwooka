@@ -2,92 +2,92 @@
 
 :root {
   // text
-  --text-primary: $color-grey-950;
-  --text-secondary: $color-grey-600;
-  --text-brand: $color-brand-500;
-  --text-invert: $color-grey-50;
-  --text-warning: $color-warning-500;
-  --text-error: $color-error-500;
-  --text-success: $color-success-500;
-  --text-primary-placeholder: $color-grey-500;
-  --text-neutral: $color-grey-25;
-  --text-dark: $color-grey-950;
+  --text-primary: #{$color-grey-950};
+  --text-secondary: #{$color-grey-600};
+  --text-brand: #{$color-brand-500};
+  --text-invert: #{$color-grey-50};
+  --text-warning: #{$color-warning-500};
+  --text-error: #{$color-error-500};
+  --text-success: #{$color-success-500};
+  --text-primary-placeholder: #{$color-grey-500};
+  --text-neutral: #{$color-grey-25};
+  --text-dark: #{$color-grey-950};
 
   // surface
-  --surface-primary: $color-grey-25;
-  --surface-invert: $color-elevation-200;
-  --surface-brand: $color-brand-500;
-  --surface-error: $color-error-500;
-  --surface-warning: $color-warning-500;
-  --surface-success: $color-success-500;
-  --surface-secondary: $color-grey-100;
-  --surface-primary-active: $color-grey-200;
-  --surface-brand-hover: $color-brand-600;
-  --surface-brand-focused: $color-brand-800;
-  --surface-error-hover: $color-error-600;
-  --surface-error-focused: $color-error-800;
-  --surface-success-hover: $color-success-600;
-  --surface-success-focused: $color-success-800;
-  --surface-brand-active: $color-brand-50;
-  --surface-error-active: $color-error-100;
-  --surface-success-active: $color-success-100;
-  --surface-neutral: $color-grey-25;
-  --surface-warning-light: $color-error-100;
+  --surface-primary: #{$color-grey-25};
+  --surface-invert: #{$color-elevation-200};
+  --surface-brand: #{$color-brand-500};
+  --surface-error: #{$color-error-500};
+  --surface-warning: #{$color-warning-500};
+  --surface-success: #{$color-success-500};
+  --surface-secondary: #{$color-grey-100};
+  --surface-primary-active: #{$color-grey-200};
+  --surface-brand-hover: #{$color-brand-600};
+  --surface-brand-focused: #{$color-brand-800};
+  --surface-error-hover: #{$color-error-600};
+  --surface-error-focused: #{$color-error-800};
+  --surface-success-hover: #{$color-success-600};
+  --surface-success-focused: #{$color-success-800};
+  --surface-brand-active: #{$color-brand-50};
+  --surface-error-active: #{$color-error-100};
+  --surface-success-active: #{$color-success-100};
+  --surface-neutral: #{$color-grey-25};
+  --surface-warning-light: #{$color-error-100};
 
   // border
-  --border-primary: $color-grey-300;
-  --border-primary-light: $color-grey-200;
-  --border-primary-lighter: $color-grey-100;
-  --border-brand: $color-brand-500;
-  --border-error: $color-error-500;
+  --border-primary: #{$color-grey-300};
+  --border-primary-light: #{$color-grey-200};
+  --border-primary-lighter: #{$color-grey-100};
+  --border-brand: #{$color-brand-500};
+  --border-error: #{$color-error-500};
 
   // background
-  --background-primary: $color-grey-100;
-  --background-secondary: $color-grey-25;
+  --background-primary: #{$color-grey-100};
+  --background-secondary: #{$color-grey-25};
 
   @media (prefers-color-scheme: dark) {
     // text
-    --text-primary: $color-grey-100;
-    --text-secondary: $color-grey-300;
-    --text-brand: $color-brand-500;
-    --text-invert: $color-grey-900;
-    --text-warning: $color-warning-500;
-    --text-error: $color-error-500;
-    --text-success: $color-success-500;
-    --text-primary-placeholder: $color-grey-400;
-    --text-neutral: $color-grey-25;
-    --text-dark: $color-grey-950;
+    --text-primary: #{$color-grey-100};
+    --text-secondary: #{$color-grey-300};
+    --text-brand: #{$color-brand-500};
+    --text-invert: #{$color-grey-900};
+    --text-warning: #{$color-warning-500};
+    --text-error: #{$color-error-500};
+    --text-success: #{$color-success-500};
+    --text-primary-placeholder: #{$color-grey-400};
+    --text-neutral: #{$color-grey-25};
+    --text-dark: #{$color-grey-950};
 
     // surface
-    --surface-primary: $color-elevation-200;
-    --surface-invert: $color-grey-25;
-    --surface-brand: $color-brand-500;
-    --surface-error: $color-error-500;
-    --surface-warning: $color-warning-500;
-    --surface-success: $color-success-500;
-    --surface-secondary: $color-grey-800;
-    --surface-primary-active: $color-elevation-400;
-    --surface-brand-hover: $color-brand-600;
-    --surface-brand-focused: $color-brand-800;
-    --surface-error-hover: $color-error-600;
-    --surface-error-focused: $color-error-800;
-    --surface-success-hover: $color-success-600;
-    --surface-success-focused: $color-success-800;
-    --surface-brand-active: $color-brand-950;
-    --surface-error-active: $color-error-900;
-    --surface-success-active: $color-success-900;
-    --surface-neutral: $color-grey-25;
-    --surface-warning-light: $color-error-100;
+    --surface-primary: #{$color-elevation-200};
+    --surface-invert: #{$color-grey-25};
+    --surface-brand: #{$color-brand-500};
+    --surface-error: #{$color-error-500};
+    --surface-warning: #{$color-warning-500};
+    --surface-success: #{$color-success-500};
+    --surface-secondary: #{$color-grey-800};
+    --surface-primary-active: #{$color-elevation-400};
+    --surface-brand-hover: #{$color-brand-600};
+    --surface-brand-focused: #{$color-brand-800};
+    --surface-error-hover: #{$color-error-600};
+    --surface-error-focused: #{$color-error-800};
+    --surface-success-hover: #{$color-success-600};
+    --surface-success-focused: #{$color-success-800};
+    --surface-brand-active: #{$color-brand-950};
+    --surface-error-active: #{$color-error-900};
+    --surface-success-active: #{$color-success-900};
+    --surface-neutral: #{$color-grey-25};
+    --surface-warning-light: #{$color-error-100};
 
     // border
-    --border-primary: $color-elevation-500;
-    --border-primary-light: $color-grey-600;
-    --border-primary-lighter: $color-grey-700;
-    --border-brand: $color-brand-500;
-    --border-error: $color-error-500;
+    --border-primary: #{$color-elevation-500};
+    --border-primary-light: #{$color-grey-600};
+    --border-primary-lighter: #{$color-grey-700};
+    --border-brand: #{$color-brand-500};
+    --border-error: #{$color-error-500};
 
     // background
-    --background-primary: $color-grey-950;
-    --background-secondary: $color-elevation-200;
+    --background-primary: #{$color-grey-950};
+    --background-secondary: #{$color-elevation-200};
   }
 }
