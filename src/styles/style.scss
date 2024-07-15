@@ -1,0 +1,9 @@
+@import "_globals.scss";
+@import "_tokens.scss";
+@import "_variables.scss";
+
+body {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  font-weight: $font-weight-bold;
+}
