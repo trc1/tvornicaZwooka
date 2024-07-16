@@ -11,15 +11,15 @@ export default function LogoIcon({ className }) {
       className={className}
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M26.6866 52C41.046 52 52.6866 40.3594 52.6866 26C52.6866 11.6406 41.046 0 26.6866 0C12.3272 0 0.686646 11.6406 0.686646 26C0.686646 40.3594 12.3272 52 26.6866 52ZM26.6866 46.4649C37.9891 46.4649 47.1516 37.3024 47.1516 25.9999C47.1516 14.6974 37.9891 5.53495 26.6866 5.53495C15.3841 5.53495 6.22166 14.6974 6.22166 25.9999C6.22166 37.3024 15.3841 46.4649 26.6866 46.4649Z"
         fill="url(#paint0_angular_606_97272)"
       />
       <g filter="url(#filter0_i_606_97272)">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M26.6867 46.4651C37.9892 46.4651 47.1517 37.3026 47.1517 26.0001C47.1517 14.6976 37.9892 5.53516 26.6867 5.53516C15.3842 5.53516 6.22168 14.6976 6.22168 26.0001C6.22168 37.3026 15.3842 46.4651 26.6867 46.4651ZM26.6867 37.1428C32.8407 37.1428 37.8295 32.154 37.8295 26C37.8295 19.846 32.8407 14.8571 26.6867 14.8571C20.5326 14.8571 15.5438 19.846 15.5438 26C15.5438 32.154 20.5326 37.1428 26.6867 37.1428Z"
           fill="url(#paint1_angular_606_97272)"
         />
@@ -52,9 +52,9 @@ export default function LogoIcon({ className }) {
           width="40.93"
           height="40.9297"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -88,11 +88,11 @@ export default function LogoIcon({ className }) {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(29.6119 24.9822) rotate(135.362) scale(31.5379 39.2254)"
         >
-          <stop stop-color="#FF61A8" />
-          <stop offset="0.411458" stop-color="#6957FF" />
-          <stop offset="0.59956" stop-color="#FFC83A" />
-          <stop offset="0.755208" stop-color="#7F3FFF" />
-          <stop offset="0.932292" stop-color="#FC00E3" />
+          <stop stopColor="#FF61A8" />
+          <stop offset="0.411458" stopColor="#6957FF" />
+          <stop offset="0.59956" stopColor="#FFC83A" />
+          <stop offset="0.755208" stopColor="#7F3FFF" />
+          <stop offset="0.932292" stopColor="#FC00E3" />
         </radialGradient>
         <radialGradient
           id="paint1_angular_606_97272"
@@ -102,11 +102,11 @@ export default function LogoIcon({ className }) {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(29.415 25.199) rotate(135.362) scale(24.8239 30.8749)"
         >
-          <stop stop-color="#FF61A8" />
-          <stop offset="0.411458" stop-color="#6957FF" />
-          <stop offset="0.59956" stop-color="#FFC83A" />
-          <stop offset="0.755208" stop-color="#7F3FFF" />
-          <stop offset="0.932292" stop-color="#FC00E3" />
+          <stop stopColor="#FF61A8" />
+          <stop offset="0.411458" stopColor="#6957FF" />
+          <stop offset="0.59956" stopColor="#FFC83A" />
+          <stop offset="0.755208" stopColor="#7F3FFF" />
+          <stop offset="0.932292" stopColor="#FC00E3" />
         </radialGradient>
       </defs>
     </svg>

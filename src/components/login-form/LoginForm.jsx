@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LogoIcon from "../../assets/icons/LogoIcon";
 import Input from "../../components/input/Input";
 import EmailIcon from "../../assets/icons/EmailIcon";
@@ -20,14 +21,18 @@ export default function LoginForm() {
       </div>
       <Input type="text" placeholder="Email Address" icon={<EmailIcon />} />
       <Input type="password" placeholder="Password" icon={<LockIcon />} />
-      <Button className="btn-primary" label="Login" width={100} />
+      <Link to={"/dashboard"} style={{ width: "100%" }}>
+        <Button className="btn-primary" label="Login" width={100} />
+      </Link>
       <div className="login-form__separator">or</div>
-      <Button
-        className="btn-outline"
-        label="Authorize with Google"
-        width={100}
-        icon={<GoogleIcon />}
-      />
+      <Link to={"/dashboard"} style={{ width: "100%" }}>
+        <Button
+          className="btn-outline"
+          label="Authorize with Google"
+          width={100}
+          icon={<GoogleIcon />}
+        />
+      </Link>
     </form>
   );
 }
