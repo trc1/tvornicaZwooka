@@ -1,14 +1,11 @@
-import LoginDecoration from "./assets/login-elements/LoginDecoration";
-import ZwookDashboard from "./assets/login-elements/ZwookDashboard";
+import Login from "./pages/Login";
 
 import "./styles/style.scss";
 
 function App() {
   return (
     <>
-      <LoginDecoration />
-      <LoginDecoration />
-      <ZwookDashboard />
+      <Login />
     </>
   );
 }

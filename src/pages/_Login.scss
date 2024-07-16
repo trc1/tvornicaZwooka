@@ -5,54 +5,12 @@
   display: flex;
 
   &__card {
-    width: 50%;
-    height: 100%;
+    flex: 1;
     @include flexbox(center, center);
-
-    &-form {
-      background-color: var(--background-secondary);
-      border: 1px solid var(--border-primary);
-      border-radius: $radius-rounded;
-      padding: $spacing-24;
-      width: 30rem;
-      @include flexbox(center, center, column, $spacing-24);
-
-      &-logo {
-        width: 100%;
-      }
-
-      &-info {
-        width: 100%;
-        text-align: center;
-        @include flexbox(center, center, column, $spacing-4);
-
-        &-welcome {
-          @include text(
-            $text-size-xl,
-            $font-weight-semibold,
-            $text-line-height-xl
-          );
-        }
-
-        &-signup {
-          @include text(
-            $text-size-m,
-            $font-weight-medium,
-            $text-line-height-m,
-            var(--text-primary-placeholder)
-          );
-          &-link {
-            color: var(--text-primary);
-            margin-left: $spacing-4;
-          }
-        }
-      }
-    }
   }
 
   &__image {
-    width: 50%;
-    height: 100%;
+    flex: 1;
     background-color: var(--surface-warning);
     position: relative;
     overflow: hidden;

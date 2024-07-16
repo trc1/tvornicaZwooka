@@ -471,11 +471,11 @@ export default function ZwookDashboard({ className }) {
         </pattern>
         <radialGradient
           id="paint0_angular_601_53292"
-          cx="0"
+          cx=".5"
           cy="0"
-          r="1"
+          r="2"
           gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(132.925 139.982) rotate(115.362) scale(31.5379 39.2254)"
+          gradientTransform="translate(132.925 139.982) rotate(135.362) scale(31.5379 39.2254)"
         >
           <stop stop-color="#FF61A8" />
           <stop offset="0.411458" stop-color="#6957FF" />
@@ -485,11 +485,11 @@ export default function ZwookDashboard({ className }) {
         </radialGradient>
         <radialGradient
           id="paint1_angular_601_53292"
-          cx="0"
+          cx=".5"
           cy="0"
-          r="1"
+          r="2"
           gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(132.728 140.199) rotate(115.362) scale(24.8239 30.8749)"
+          gradientTransform="translate(132.728 140.199) rotate(135.362) scale(24.8239 30.8749)"
         >
           <stop stop-color="#FF61A8" />
           <stop offset="0.411458" stop-color="#6957FF" />

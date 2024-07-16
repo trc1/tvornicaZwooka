@@ -82,11 +82,11 @@ export default function LogoIcon({ className }) {
         </filter>
         <radialGradient
           id="paint0_angular_606_97272"
-          cx="0"
+          cx=".5"
           cy="0"
-          r="1"
+          r="2"
           gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(27.6119 24.9822) rotate(115.362) scale(31.5379 39.2254)"
+          gradientTransform="translate(29.6119 24.9822) rotate(135.362) scale(31.5379 39.2254)"
         >
           <stop stop-color="#FF61A8" />
           <stop offset="0.411458" stop-color="#6957FF" />
@@ -96,11 +96,11 @@ export default function LogoIcon({ className }) {
         </radialGradient>
         <radialGradient
           id="paint1_angular_606_97272"
-          cx="0"
+          cx=".5"
           cy="0"
-          r="1"
+          r="2"
           gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(27.415 25.199) rotate(115.362) scale(24.8239 30.8749)"
+          gradientTransform="translate(29.415 25.199) rotate(135.362) scale(24.8239 30.8749)"
         >
           <stop stop-color="#FF61A8" />
           <stop offset="0.411458" stop-color="#6957FF" />
