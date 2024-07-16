@@ -1,0 +1,49 @@
+.premium-container {
+  @include flexbox(start, start, column, $spacing-20);
+  padding: $spacing-16;
+  border: 1px solid var(--border-primary);
+  border-radius: $radius-rounded;
+  &__header {
+    @include flexbox(start, center, row, $spacing-12);
+    &-icon {
+      display: flex;
+      padding: $spacing-12;
+      border-radius: $radius-full;
+      background-color: rgba(238, 204, 68, 0.1);
+    }
+    &-text {
+      @include text(
+        $text-size-lg,
+        $font-weight-medium,
+        $text-line-height-l,
+        var(--text-primary)
+      );
+    }
+  }
+  &__description {
+    @include text(
+      $text-size-m,
+      $font-weight-regular,
+      $text-line-height-m,
+      var(--text-primary-placeholder)
+    );
+  }
+  &__progress-bar-container {
+    background-color: var(--surface-primary-active);
+    width: 100%;
+    height: 0.5rem;
+    border-radius: $radius-full;
+    position: relative;
+    .progress-bar {
+      position: absolute;
+      width: 84%;
+      height: 100%;
+      left: 0;
+      border-radius: $radius-full;
+      background-color: var(--surface-warning);
+    }
+  }
+  &__buttons-container {
+    @include flexbox(start, start, row, $spacing-4);
+  }
+}
