@@ -44,3 +44,24 @@
     padding: $spacing-8;
   }
 }
+
+@mixin badge($size, $color, $border-color:null) {
+  @if $size == xs {
+    font-size: $text-line-height-xs;
+    line-height: $text-line-height-xs;
+    padding: $spacing-4 $spacing-8;
+  } @else if $size == s {
+    font-size: $text-size-s;
+    line-height: $text-line-height-s;
+    padding: $spacing-4 $spacing-12;
+  }
+
+  background-color: $color;
+  font-weight: $font-weight-medium;
+  border-radius: $radius-full;
+  text-align: center;
+
+  @if $border-color {
+    border: 1px solid $border-color;
+  }
+}

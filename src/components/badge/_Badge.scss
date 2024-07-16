@@ -1,0 +1,25 @@
+.badge-xs-primary {
+  @include badge(xs, var(--surface-warning));
+}
+
+.badge-s-primary {
+  @include badge(s, var(--surface-warning));
+}
+
+.badge-xs-secondary {
+  @include badge(xs, var(--surface-secondary), var(--border-primary));
+}
+
+.badge-s-secondary {
+  @include badge(s, var(--surface-secondary), var(--border-primary));
+}
+
+.badge-xs-brand {
+  @include badge(xs, var(--surface-brand));
+  color: var(--text-neutral);
+}
+
+.badge-s-brand {
+  @include badge(s, var(--surface-brand));
+  color: var(--text-neutral);
+}
