@@ -11,7 +11,7 @@ export default function FlashIcon() {
     >
       <path
         d="M9.14289 0.571289V6.28557H13.1429L6.85718 15.4284V9.71415H2.85718L9.14289 0.571289Z"
-        stroke="#4B5565"
+        stroke="var(--text-primary)"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

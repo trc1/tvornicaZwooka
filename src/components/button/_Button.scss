@@ -18,6 +18,7 @@
 
   &-small {
     @include button(small);
+    color: var(--text-primary);
     &:hover {
       background-color: var(--surface-primary-active);
     }

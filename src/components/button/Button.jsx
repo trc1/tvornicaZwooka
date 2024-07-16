@@ -1,8 +1,19 @@
-export default function Button({ width, icon, label, className, onClick }) {
+export default function Button({
+  width,
+  icon,
+  label,
+  className,
+  onClick,
+  color,
+}) {
+  const buttonStyles = {
+    width: width ? `${width}%` : undefined,
+    color: color,
+  };
   return (
     <button
       className={`btn ${className}`}
-      style={width ? { width: `${width}%` } : {}}
+      style={buttonStyles}
       onClick={onClick}
       type="button"
     >

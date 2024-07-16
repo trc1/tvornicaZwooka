@@ -1,9 +1,11 @@
 .badge-xs-primary {
   @include badge(xs, var(--surface-warning));
+  color: var(--text-dark);
 }
 
 .badge-s-primary {
   @include badge(s, var(--surface-warning));
+  color: var(--text-dark);
 }
 
 .badge-xs-secondary {
