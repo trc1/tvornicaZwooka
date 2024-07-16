@@ -1,0 +1,7 @@
+.sidebar {
+  flex: 1;
+  padding: $spacing-24;
+  @include flexbox(start, start, column, $spacing-24);
+  background-color: var(--background-secondary);
+  border-right: 1px solid var(--border-primary-lighter);
+}

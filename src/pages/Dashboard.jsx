@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
+import Sidebar from "../components/sidebar/Sidebar";
+import Main from "../components/main/Main";
 
 export default function Dashboard() {
   return (
-    <div>Dashboard</div>
-  )
+    <div className="content">
+      <Sidebar />
+      <Main />
+    </div>
+  );
 }

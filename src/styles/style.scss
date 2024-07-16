@@ -3,6 +3,7 @@
 @import "./variables";
 @import "./reset";
 @import "./mixins";
+@import "./layout";
 
 //pages
 @import "../pages/Login";
@@ -11,3 +12,5 @@
 @import "../components/input/Input";
 @import "../components/button/Button";
 @import "../components/login-form/LoginForm";
+@import "../components/sidebar/Sidebar";
+@import "../components/main/Main";
