@@ -21,6 +21,7 @@ export default function LoginForm() {
       <Input type="text" placeholder="Email Address" icon={<EmailIcon />} />
       <Input type="password" placeholder="Password" icon={<LockIcon />} />
       <Button className="btn-primary" label="Login" width={100} />
+      <div className="login-form__separator">or</div>
       <Button
         className="btn-outline"
         label="Authorize with Google"

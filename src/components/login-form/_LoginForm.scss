@@ -32,4 +32,34 @@
       }
     }
   }
+  &__separator {
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 100%;
+    @include text(
+      $text-size-m,
+      $font-weight-medium,
+      $text-line-height-m,
+      var(--text-primary-placeholder)
+    );
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: calc(50% - $spacing-20);
+      border-bottom: 1px solid var(--border-primary);
+    }
+    &::before {
+      left: 0;
+      margin-right: $spacing-20;
+    }
+
+    &::after {
+      right: 0;
+      margin-left: $spacing-20;
+    }
+  }
 }
