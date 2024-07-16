@@ -1,4 +1,9 @@
-@mixin flexbox($justify: center, $align: center, $direction: column, $gap: null) {
+@mixin flexbox(
+  $justify: center,
+  $align: center,
+  $direction: column,
+  $gap: null
+) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
@@ -8,28 +13,34 @@
   }
 }
 
-@mixin text($font-size: 1rem, $font-weight: normal, $line-height: normal, $color: inherit) {
-    font-size: $font-size;
-    font-weight: $font-weight;
-    line-height: $line-height;
-    color: $color;
-  }
+@mixin text(
+  $font-size: 1rem,
+  $font-weight: normal,
+  $line-height: normal,
+  $color: inherit
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $color;
+}
 
-  @mixin button($size: regular) {
-    @include flexbox(center, center, row, $spacing-8);
-    @include text(
-      $text-size-m,
-      $font-weight-regular,
-      $text-line-height-m,
-      var(--text-dark)
-    );
-    border-radius: $radius-base;
-    cursor: pointer;
-  
-    @if $size == regular {
-      padding: $spacing-16 $spacing-24;
-    } @else if $size == small {
-      padding: $spacing-8;
-    }
+@mixin button($size: regular, $border-radius: $radius-base) {
+  @include flexbox(center, center, row, $spacing-8);
+  @include text(
+    $text-size-m,
+    $font-weight-regular,
+    $text-line-height-m,
+    var(--text-dark)
+  );
+  border-radius: $border-radius;
+  cursor: pointer;
 
+  @if $size == regular {
+    padding: $spacing-12 $spacing-20;
+  } @else if $size == small {
+    padding: $spacing-8 $spacing-12;
+  } @else if $size == small-square {
+    padding: $spacing-8;
   }
+}

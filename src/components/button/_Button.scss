@@ -21,5 +21,28 @@
     &:hover {
       background-color: var(--surface-primary-active);
     }
+    &-outline {
+      border: 1px solid var(--border-primary);
+      color: var(--text-primary);
+      &:hover {
+        background-color: var(--surface-primary-active);
+      }
+    }
+    &-primary {
+      background-color: var(--surface-warning);
+      &:hover {
+        background-color: var(--surface-brand);
+      }
+    }
   }
+  &-icon {
+    @include button(small-square);
+    color: var(--text-primary);
+    &:hover {
+      background-color: var(--surface-primary-active);
+    }
+  }
+}
+.btn-active {
+  background-color: var(--surface-invert);
 }
