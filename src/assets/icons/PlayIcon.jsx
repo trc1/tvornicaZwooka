@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PlayIcon() {
+export default function PlayIcon({ className }) {
   return (
     <svg
       width="33"
@@ -8,6 +8,7 @@ export default function PlayIcon() {
       viewBox="0 0 33 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M2.75 15.9971C2.75 19.6438 4.19866 23.1412 6.77728 25.7198C9.35591 28.2984 12.8533 29.7471 16.5 29.7471C20.1467 29.7471 23.6441 28.2984 26.2227 25.7198C28.8013 23.1412 30.25 19.6438 30.25 15.9971C30.25 12.3503 28.8013 8.85298 26.2227 6.27435C23.6441 3.69573 20.1467 2.24707 16.5 2.24707C12.8533 2.24707 9.35591 3.69573 6.77728 6.27435C4.19866 8.85298 2.75 12.3503 2.75 15.9971Z"

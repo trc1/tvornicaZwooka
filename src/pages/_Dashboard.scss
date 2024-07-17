@@ -1,1 +1,8 @@
-
+.section-wrapper {
+  @include flexbox(start, center, column, $spacing-32);
+  height: 100%;
+}
+.feature-section {
+  @include flexbox(center, start, row, $spacing-24);
+  margin: $spacing-24 $spacing-36 $spacing-40 $spacing-36;
+}

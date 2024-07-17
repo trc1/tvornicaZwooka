@@ -1,7 +1,7 @@
+import { useState } from "react";
 import { sidebarNavigation } from "../../data/sidebar-data";
 import Badge from "../badge/Badge";
 import ArrowIcon from "../../assets/icons/ArrowIcon";
-import { useState } from "react";
 import Subnavigation from "../subnavigation/Subnavigation";
 
 export default function Navigation() {
@@ -16,9 +16,8 @@ export default function Navigation() {
       {sidebarNavigation.map((item, index) => {
         const IconComponent = item.icon;
         return (
-          <ul className="navigation-wrapper__list">
+          <ul key={index} className="navigation-wrapper__list">
             <li
-              key={index}
               className={`navigation-wrapper__item ${
                 index === active ? "active" : ""
               }`}

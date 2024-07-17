@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ShuffleIcon() {
+export default function ShuffleIcon({ className }) {
   return (
     <svg
       width="21"
@@ -8,6 +8,7 @@ export default function ShuffleIcon() {
       viewBox="0 0 21 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M9.04861 7.70856C8.68084 7.21361 8.2107 6.80374 7.67024 6.50688C7.12977 6.21002 6.53166 6.03314 5.91667 5.98828H1.90625"

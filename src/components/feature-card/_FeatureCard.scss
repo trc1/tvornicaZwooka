@@ -1,0 +1,26 @@
+.feature-card {
+  @include flexbox(end, start, column, $spacing-16);
+  padding: $spacing-20;
+  border-radius: $radius-base;
+  width: 48rem;
+  height: 19rem;
+  &__info {
+    width: 100%;
+    &-title {
+      @include text(
+        $display-size-m,
+        $font-weight-medium,
+        $display-line-height-m,
+        var(--text-neutral)
+      );
+    }
+    &-description {
+      @include text(
+        $text-size-m,
+        $font-weight-semibold,
+        $text-line-height-m,
+        var(--text-neutral)
+      );
+    }
+  }
+}

@@ -19,8 +19,8 @@ export default function SearchIcon() {
         <path
           d="M10.814 10.8135L15.5 15.5001"
           stroke="var(--text-primary-placeholder)"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <defs>

@@ -5,6 +5,7 @@
 }
 .main {
   flex: 5.5;
-  @include flexbox(space-between, start, column, $spacing-36);
+  display: flex;
+  flex-direction: column;
   background-color: var(--background-primary);
 }

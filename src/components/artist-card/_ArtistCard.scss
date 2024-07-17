@@ -2,7 +2,7 @@
   @include flexbox(center, center, row, $spacing-8);
   padding: $spacing-8;
   &__image {
-    width: 2.5rem;
+    width: $avatar-size-m;
     border: 1px solid var(--border-primary);
     border-radius: $radius-minimal;
   }
