@@ -5,12 +5,12 @@ import Premium from "../premium/Premium";
 
 export default function Sidebar() {
   return (
-    <div className="sidebar">
+    <nav className="sidebar">
       <header className="sidebar__header">
         <LogoIcon />
       </header>
       <Navigation />
       <Premium />
-    </div>
+    </nav>
   );
 }

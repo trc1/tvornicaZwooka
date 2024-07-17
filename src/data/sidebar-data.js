@@ -19,6 +19,7 @@ export const sidebarNavigation = [
     name: "Devices",
     icon: LaptopIcon,
     notification: 10,
+    subnavigation: 10,
     active: false,
     dropdown: false,
   },

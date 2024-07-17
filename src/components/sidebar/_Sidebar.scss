@@ -4,6 +4,14 @@
   @include flexbox(start, start, column, $spacing-24);
   background-color: var(--background-secondary);
   border-right: 1px solid var(--border-primary-lighter);
+  overflow-y: auto;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   &__header {
     width: 100%;

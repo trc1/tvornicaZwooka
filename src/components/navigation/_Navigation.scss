@@ -2,6 +2,10 @@
   @include flexbox(start, start, column, $spacing-16);
   flex-grow: 1;
   width: 100%;
+  &__list {
+    width: inherit;
+    height: inherit;
+  }
   &__item {
     @include flexbox(space-between, center, row, $spacing-8);
     width: 100%;
@@ -29,6 +33,19 @@
     }
     &-notifications {
       @include flexbox(start, center, row, $spacing-12);
+    }
+    &-subnavigation {
+      padding-left: $spacing-24;
+      &__item {
+        @include flexbox(space-between, center, row, $spacing-8);
+        width: 100%;
+        padding: $spacing-8 $spacing-12;
+        border-radius: $radius-base;
+        &:hover {
+          cursor: pointer;
+          background-color: var(--surface-primary-active);
+        }
+      }
     }
   }
 }
