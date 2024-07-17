@@ -1,0 +1,15 @@
+.music-control {
+  @include flexbox(space-between, center, row);
+  padding: $spacing-12 $spacing-36;
+  border-top: 1px solid var(--border-primary-lighter);
+  box-shadow: 0px -4px 8px 0px var(--color-shadow);
+  background-color: var(--surface-primary);
+  width: 100%;
+  &__navigation {
+    @include flexbox(center, center, column, $spacing-20);
+  }
+  &__volume {
+    @include flexbox(center, center, row, $spacing-12);
+    width: 13rem;
+  }
+}
