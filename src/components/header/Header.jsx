@@ -3,7 +3,7 @@ import GreaphNeutralIcon from "../../assets/icons/GraphNeutralIcon";
 import BellIcon from "../../assets/icons/BellIcon";
 import Button from "../button/Button";
 import Input from "../input/Input";
-import User from "../user/User";
+import Profile from "../profile/Profile";
 
 export default function Header() {
   return (
@@ -21,7 +21,7 @@ export default function Header() {
           <Button className="btn-icon" icon={<GreaphNeutralIcon />} />
           <Button className="btn-icon" icon={<BellIcon />} />
         </div>
-        <User />
+        <Profile />
       </div>
     </header>
   );
