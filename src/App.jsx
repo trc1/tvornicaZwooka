@@ -3,8 +3,9 @@ import Header from "./components/header/Header";
 import Sidebar from "./components/sidebar/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
-import "./styles/style.scss";
+import MusicControl from "./components/music-control/MusicControl";
 
+import "./styles/style.scss";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
               <Route index element={<Dashboard />} />
             </Route>
           </Routes>
+          <MusicControl />
         </div>
       </div>
     </>

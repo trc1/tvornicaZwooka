@@ -28,21 +28,7 @@
       var(--text-primary-placeholder)
     );
   }
-  &__progress-bar-container {
-    background-color: var(--surface-primary-active);
-    width: 100%;
-    height: 0.5rem;
-    border-radius: $radius-full;
-    position: relative;
-    .progress-bar {
-      position: absolute;
-      width: 84%;
-      height: 100%;
-      left: 0;
-      border-radius: $radius-full;
-      background-color: var(--surface-warning);
-    }
-  }
+
   &__buttons-container {
     @include flexbox(start, start, row, $spacing-4);
   }

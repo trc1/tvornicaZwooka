@@ -1,0 +1,14 @@
+.timeline {
+  @include flexbox(center, center, row, $spacing-12);
+  width: 100%;
+  min-width: 26rem;
+  &__current-time,
+  &__duration {
+    @include text(
+      $text-size-xs,
+      $font-weight-regular,
+      $text-line-height-s,
+      var(--text-primary-placeholder)
+    );
+  }
+}

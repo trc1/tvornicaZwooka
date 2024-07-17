@@ -1,5 +1,6 @@
 import StarIcon from "../../assets/icons/StarIcon";
 import Button from "../button/Button";
+import ProgressBar from "../progress-bar/ProgressBar";
 
 export default function Premium() {
   return (
@@ -14,9 +15,7 @@ export default function Premium() {
         Your Premium account is coming to an end. Please update your credit card
         information.
       </p>
-      <div className="premium-container__progress-bar-container">
-        <div className="progress-bar"></div>
-      </div>
+      <ProgressBar />
       <div className="premium-container__buttons-container">
         <Button className="btn-small" label="Dismiss" />
         <Button

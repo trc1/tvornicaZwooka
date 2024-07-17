@@ -2,6 +2,7 @@
   @include flexbox(space-between, center, row, $spacing-20);
   padding: $spacing-12 $spacing-24;
   border-bottom: 1px solid var(--border-primary-lighter);
+  width: 100%;
   &__left {
     flex-grow: 1;
   }

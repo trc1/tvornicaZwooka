@@ -1,0 +1,12 @@
+.progress-bar {
+  background-color: var(--surface-primary-active);
+  border-radius: $radius-full;
+  position: relative;
+  &__fill {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    border-radius: $radius-full;
+    background-color: var(--surface-warning);
+  }
+}

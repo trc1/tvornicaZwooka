@@ -7,7 +7,7 @@ export default function Button({
   color,
 }) {
   const buttonStyles = {
-    width: width ? `${width}%` : undefined,
+    width: width ? `${width}%` : "",
     color: color,
   };
   return (

@@ -37,13 +37,16 @@
   // border
   --border-primary: #{$color-grey-300};
   --border-primary-light: #{$color-grey-200};
-  --border-primary-lighter: #{$color-grey-100};
+  --border-primary-lighter: #{$color-grey-200};
   --border-brand: #{$color-brand-500};
   --border-error: #{$color-error-500};
 
   // background
   --background-primary: #{$color-grey-100};
   --background-secondary: #{$color-grey-25};
+
+  // shadow
+  --color-shadow: #{$color-shadow-dark};
 
   @media (prefers-color-scheme: dark) {
     // text
@@ -89,5 +92,8 @@
     // background
     --background-primary: #{$color-grey-950};
     --background-secondary: #{$color-elevation-200};
+
+    // shadow
+    --color-shadow: #{$color-shadow-light};
   }
 }
