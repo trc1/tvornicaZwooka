@@ -1,3 +1,20 @@
 .music-navigation__wrapper {
   @include flexbox(center, center, row, $spacing-36);
+  &-icon {
+    position: relative;
+
+    &:hover {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0.2rem;
+        height: 0.2rem;
+        bottom: -25%;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: var(--surface-invert);
+        border-radius: $radius-full;
+      }
+    }
+  }
 }
