@@ -1,0 +1,3 @@
+.music-navigation__wrapper {
+  @include flexbox(center, center, row, $spacing-36);
+}
