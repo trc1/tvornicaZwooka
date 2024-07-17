@@ -1,0 +1,43 @@
+.user-container {
+  @include flexbox(center, center, row, $spacing-12);
+  &__image-wrapper {
+    position: relative;
+    &-image {
+      width: $avatar-size-m;
+      height: $avatar-size-m;
+      border-radius: $radius-full;
+      border: 1px solid var(--border-primary);
+    }
+    &-status {
+      position: absolute;
+      width: 0.75rem;
+      height: 0.75rem;
+      right: 0;
+      bottom: 0;
+      border: 1px solid var(--surface-primary);
+      border-radius: $radius-full;
+      background-color: var(--surface-success);
+    }
+  }
+  &__text-wrapper {
+    &-name {
+      @include text(
+        $text-size-m,
+        $font-weight-semibold,
+        $text-line-height-m,
+        var(--text-primary)
+      );
+    }
+    &-email {
+      @include text(
+        $text-size-s,
+        $font-weight-medium,
+        $text-line-height-s,
+        var(--text-primary-placeholder)
+      );
+    }
+  }
+}
+.offline {
+  background-color: var(--surface-error);
+}

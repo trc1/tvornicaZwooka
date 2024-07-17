@@ -1,8 +1,8 @@
-export default function Input({ icon, type, placeholder }) {
+export default function Input({ icon, type, placeholder, maxWidth }) {
   return (
-    <div className="input-container">
+    <div className="input-container" style={{ maxWidth: `${maxWidth}px` }}>
       {icon ?? icon}
-      <input type={type} placeholder={placeholder} className="input-field"/>
+      <input type={type} placeholder={placeholder} className="input-field" />
     </div>
   );
 }
