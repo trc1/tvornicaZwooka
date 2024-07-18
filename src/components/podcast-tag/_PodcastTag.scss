@@ -1,0 +1,15 @@
+.podcast-tag {
+  @include flexbox(center, center, row, $spacing-8);
+  padding: $spacing-4 $spacing-8;
+  border-radius: $radius-full;
+  background: var(--color-podcast-tag-bg);
+  max-width: max-content;
+  &__icon {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: $radius-full;
+  }
+  &__text {
+    @include text($text-size-s, $font-weight-regular, $text-line-height-s);
+  }
+}
