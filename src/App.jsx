@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import MusicControl from "./components/music-control/MusicControl";
 import Album from "./pages/Album";
 import "./styles/style.scss";
+import Podcast from "./pages/Podcast";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
             <Route path="/">
               <Route index element={<Dashboard />} />
               <Route path="/album" element={<Album />} />
+              <Route path="/podcast" element={<Podcast />} />
             </Route>
           </Routes>
           <MusicControl />

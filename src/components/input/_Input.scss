@@ -1,17 +1,30 @@
-.input-container {
+.input-wrapper {
+  @include flexbox(start, start, column, $spacing-4);
   width: 100%;
-  border: 1px solid var(--border-primary);
-  border-radius: $radius-base;
-  padding: $spacing-12;
-  background-color: var(--surface-primary);
-  @include flexbox(start, center, row, $spacing-8);
-  @include text(
-    $text-size-m,
-    $font-weight-regular,
-    $text-line-height-m,
-    var(--text-primary-placeholder)
-  );
-  .input-field {
+  &__label {
+    @include text(
+      $text-size-m,
+      $font-weight-regular,
+      $text-line-height-m,
+      var(--text-primary)
+    );
+  }
+  &__container {
     width: 100%;
+    border: 1px solid var(--border-primary);
+    border-radius: $radius-base;
+    padding: $spacing-12;
+    background-color: var(--surface-primary);
+    @include flexbox(start, center, row, $spacing-8);
+    @include text(
+      $text-size-m,
+      $font-weight-regular,
+      $text-line-height-m,
+      var(--text-primary-placeholder)
+    );
+    &-field {
+      width: 100%;
+      resize: none;
+    }
   }
 }

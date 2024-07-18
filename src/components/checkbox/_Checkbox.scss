@@ -1,0 +1,47 @@
+.checkbox-wrapper {
+  @include flexbox(start, center, row, $spacing-8);
+
+  &:hover &__container-checkbox {
+    background-color: var(--surface-brand-active);
+    border-color: var(--border-brand);
+  }
+
+  &__container {
+    position: relative;
+    @include flexbox(center, center, column);
+    &-checkbox {
+      width: 1rem;
+      height: 1rem;
+      background-color: var(--surface-primary);
+      border: 1px solid var(--border-primary);
+      border-radius: $radius-minimal;
+      position: relative;
+
+      &-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      &:focus {
+        box-shadow: 0px 0px 0px 2px #2970ff33;
+      }
+
+      &:checked + &-icon {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__label {
+    @include text(
+      $text-size-m,
+      $font-weight-regular,
+      $text-line-height-m,
+      var(--text-primary)
+    );
+  }
+}
