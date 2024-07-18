@@ -12,12 +12,7 @@ export default function Dashboard() {
     <div className="content-section">
       <section className="content-section__featured">
         {feature.map((item) => (
-          <FeatureCard
-            key={item.title}
-            image={item.image}
-            title={item.title}
-            description={item.description}
-          />
+          <FeatureCard key={item.title} data={item} />
         ))}
       </section>
       <div className="content-section__sections">
@@ -48,8 +43,8 @@ export default function Dashboard() {
             <Button className="btn-small outline" label="Disabled" />
           </header>
           <div className="section-wrapper__carusel">
-            {featured.map((item) => (
-              <CategoryCard image={item.image} title={item.title} />
+            {featured.map((item, index) => (
+              <CategoryCard key={index} image={item.image} title={item.title} />
             ))}
           </div>
         </section>
@@ -59,8 +54,8 @@ export default function Dashboard() {
             <Button className="btn-small outline" label="View All" />
           </header>
           <div className="section-wrapper__carusel">
-            {category.map((item) => (
-              <CategoryCard image={item.image} title={item.title} />
+            {category.map((item, index) => (
+              <CategoryCard key={index} image={item.image} title={item.title} />
             ))}
           </div>
         </section>

@@ -4,7 +4,7 @@ import Sidebar from "./components/sidebar/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import MusicControl from "./components/music-control/MusicControl";
-
+import Album from "./pages/Album";
 import "./styles/style.scss";
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/">
               <Route index element={<Dashboard />} />
+              <Route path="/album" element={<Album />} />
             </Route>
           </Routes>
           <MusicControl />

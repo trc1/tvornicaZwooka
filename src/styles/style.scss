@@ -8,6 +8,7 @@
 //pages
 @import "../pages/Login";
 @import "../pages/Dashboard";
+@import "../pages/Album";
 
 //components
 @import "../components/input/Input";
@@ -29,3 +30,4 @@
 @import "../components/podcast-tag/PodcastTag";
 @import "../components/podcast-card/PodcastCard";
 @import "../components/category-card/Categorycard";
+@import "../components/feature-container/FeatureContainer";

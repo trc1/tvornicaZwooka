@@ -1,0 +1,7 @@
+.album-content {
+  @include flexbox(start, center, column);
+  width: 100%;
+  height: 100%;
+  padding: 0 $spacing-36;
+  overflow-y: scroll;
+}

@@ -1,0 +1,29 @@
+.feature-container {
+  @include flexbox(start, end, row, $spacing-24);
+  width: 100%;
+  min-height: 300px;
+  padding: $spacing-24;
+  border-radius: $radius-rounded;
+  &__image {
+    border-radius: $radius-minimal;
+  }
+  &__info {
+    @include flexbox(start, start, column);
+    &-description {
+      @include text(
+        $text-size-m,
+        $font-weight-semibold,
+        $text-line-height-m,
+        var(--text-neutral)
+      );
+    }
+    &-title {
+      @include text(
+        $display-size-2xl,
+        $font-weight-medium,
+        $display-line-height-2xl,
+        var(--text-neutral)
+      );
+    }
+  }
+}
