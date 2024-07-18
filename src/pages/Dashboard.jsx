@@ -1,10 +1,13 @@
 import FeatureCard from "../components/feature-card/FeatureCard";
 import PodcastCard from "../components/podcast-card/PodcastCard";
 import Button from "../components/button/Button";
+import CategoryCard from "../components/category-card/CategoryCard";
 import { feature } from "../data/feature-data";
 import { podcast } from "../data/podcast-data";
+import { featured } from "../data/featured-data";
 
 export default function Dashboard() {
+  const item = featured[0];
   return (
     <div className="content-section">
       <section className="content-section__featured">
@@ -38,6 +41,7 @@ export default function Dashboard() {
           </div>
         </section>
       </div>
+      <CategoryCard image={item.image} title={item.title} />
     </div>
   );
 }

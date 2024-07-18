@@ -1,0 +1,18 @@
+.category-card {
+  @include flexbox(center, start, column, $spacing-8);
+  padding: $spacing-12 $spacing-12 $spacing-8 $spacing-12;
+  border-radius: $radius-minimal;
+  background-color: var(--background-secondary);
+  &__image {
+    width: 150px;
+    height: 150px;
+  }
+  &__title {
+    @include text(
+      $text-size-m,
+      $font-weight-medium,
+      $text-line-height-m,
+      var(--text-primary)
+    );
+  }
+}
