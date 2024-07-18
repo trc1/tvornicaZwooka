@@ -45,7 +45,7 @@
   }
 }
 
-@mixin badge($size, $color, $border-color:null) {
+@mixin badge($size, $color, $border-color: null) {
   @if $size == xs {
     font-size: $text-line-height-xs;
     line-height: $text-line-height-xs;

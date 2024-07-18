@@ -1,0 +1,33 @@
+.podcast-card {
+  @include flexbox(space-between, end, column);
+  width: 308px;
+  height: 180px;
+  padding: $spacing-12;
+  border-radius: $radius-base;
+  position: relative;
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--text-dark);
+    opacity: 0.6;
+    z-index: 1;
+  }
+  &__wrapper {
+    @include flexbox(space-between, center, row);
+    width: 100%;
+    z-index: 2;
+    &-title {
+      @include text(
+        $text-size-m,
+        $font-weight-medium,
+        $text-line-height-m,
+        var(--text-neutral)
+      );
+      flex-grow: 1;
+    }
+  }
+}

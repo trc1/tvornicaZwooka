@@ -2,7 +2,7 @@ import ArrowDiagonalIcon from "../../assets/icons/ArrowDiagonalIcon";
 
 export default function FeatureCard({ image, title, description }) {
   return (
-    <div className="feature-card" style={{ background: `url(${image}) center no-repeat` }}>
+    <div className="feature-card" style={{ background: `url(${image})` }}>
       <div className="feature-card__icon">
         <ArrowDiagonalIcon />
       </div>

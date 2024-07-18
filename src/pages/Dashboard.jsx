@@ -1,19 +1,43 @@
-import React from "react";
 import FeatureCard from "../components/feature-card/FeatureCard";
+import PodcastCard from "../components/podcast-card/PodcastCard";
+import Button from "../components/button/Button";
 import { feature } from "../data/feature-data";
+import { podcast } from "../data/podcast-data";
 
 export default function Dashboard() {
   return (
-    <div className="section-wrapper">
-      <section className="feature-section">
+    <div className="content-section">
+      <section className="content-section__featured">
         {feature.map((item) => (
           <FeatureCard
+            key={item.title}
             image={item.image}
             title={item.title}
             description={item.description}
           />
         ))}
       </section>
+      <div className="content-section__content">
+        <section className="podcast-wrapper">
+          <header className="podcast-wrapper__header">
+            <h3 className="podcast-wrapper__header-title">Mind Matters</h3>
+            <Button className="btn-outline" label="View All" />
+          </header>
+          <div className="podcast-wrapper__carusel">
+            <div className="podcast-wrapper__carusel-overflow">
+              {podcast.map((item) => (
+                <PodcastCard
+                  key={item.title}
+                  title={item.title}
+                  status={item.status}
+                  image={item.image}
+                  badge={item.badge}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

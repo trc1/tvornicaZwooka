@@ -48,6 +48,9 @@
   // shadow
   --color-shadow: #{$color-shadow-dark};
 
+  //podcast-tag-bg
+  --color-podcast-tag-bg: #{$color-podcast-tag-bg};
+
   @media (prefers-color-scheme: dark) {
     // text
     --text-primary: #{$color-grey-100};
@@ -95,5 +98,8 @@
 
     // shadow
     --color-shadow: #{$color-shadow-light};
+
+    //podcast-tag-bg
+    --color-podcast-tag-bg: #{$color-podcast-tag-bg};
   }
 }

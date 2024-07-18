@@ -2,8 +2,9 @@
   @include flexbox(end, start, column, $spacing-16);
   padding: $spacing-20;
   border-radius: $radius-base;
-  width: 764px;
+  width: 100%;
   height: 300px;
+
   &__info {
     width: 100%;
     &-title {
