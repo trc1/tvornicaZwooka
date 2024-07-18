@@ -1,4 +1,14 @@
 import theWanderers from "../assets/images/the-wanderers.png";
+import midnightMirage from "../assets/images/midnight-mirage.png";
+import heartfeltHarmony from "../assets/images/heartfelt-harmony.png";
+import solarFlare from "../assets/images/solar-flare.png";
+import crystalClear from "../assets/images/crystal-clear.png";
+import enchantedNight from "../assets/images/enchanted-night.png";
+import northernLights from "../assets/images/northern-lights.png";
+import pulseOfTheCity from "../assets/images/pulse-of-the-city.png";
+import deapSeaSymphony from "../assets/images/deap-sea-symphony.png";
+import sunsateSarenade from "../assets/images/sunsate-sarenade.png";
+import moonlitMelody from "../assets/images/moonlit-melody.png";
 
 export const playlist = [
   {
@@ -9,5 +19,149 @@ export const playlist = [
     dateAdded: "03/03/2024",
     duration: "3:03",
     image: theWanderers,
+  },
+  {
+    id: 2,
+    songName: "Luna Waves",
+    artist: "Midnight Mirage",
+    album: "Dreamscapes",
+    dateAdded: "04/17/2024",
+    duration: "5:22",
+    image: midnightMirage,
+  },
+  {
+    id: 3,
+    songName: "Velvet Strings",
+    artist: "Hearfelt Harmony",
+    album: "Serenade of the Soul",
+    dateAdded: "04/17/2024",
+    duration: "3:46",
+    image: heartfeltHarmony,
+  },
+  {
+    id: 4,
+    songName: "The Electric Suns",
+    artist: "Solar Flare",
+    album: "Galactic Journey",
+    dateAdded: "04/17/2024",
+    duration: "1:55",
+    image: solarFlare,
+  },
+  {
+    id: 5,
+    songName: "Sapphire Sky",
+    artist: "Crystal Clear",
+    album: "Celestial Dreams",
+    dateAdded: "04/17/2024",
+    duration: "2:40",
+    image: crystalClear,
+  },
+  {
+    id: 6,
+    songName: "Mystic Moon",
+    artist: "Enchantend Night",
+    album: "Twillight Whispers",
+    dateAdded: "04/17/2024",
+    duration: "2:38",
+    image: enchantedNight,
+  },
+  {
+    id: 7,
+    songName: "Aurora Echo",
+    artist: "Northern Lights",
+    album: "Aurora Borealis",
+    dateAdded: "04/17/2024",
+    duration: "4:15",
+    image: northernLights,
+  },
+  {
+    id: 8,
+    songName: "The Rhythm Riders",
+    artist: "Pulse of the City",
+    album: "Urban Beats",
+    dateAdded: "04/17/2024",
+    duration: "3:28",
+    image: pulseOfTheCity,
+  },
+  {
+    id: 9,
+    songName: "Cirmson Tide",
+    artist: "Deep Sea Symphony",
+    album: "Oceanic Reverie",
+    dateAdded: "04/17/2024",
+    duration: "4:45",
+    image: deapSeaSymphony,
+  },
+  {
+    id: 10,
+    songName: "Golden Horizon",
+    artist: "Sunset Serenade",
+    album: "Dusk to Dawn",
+    dateAdded: "04/17/2024",
+    duration: "6:45",
+    image: sunsateSarenade,
+  },
+  {
+    id: 11,
+    songName: "Silver Strings",
+    artist: "Moonlit Melody",
+    album: "Starlit Nights",
+    dateAdded: "04/17/2024",
+    duration: "6:45",
+    image: moonlitMelody,
+  },
+  {
+    id: 12,
+    songName: "Echoes of Eternity",
+    artist: "Timeless Tune",
+    album: "Forevermore",
+    dateAdded: "04/17/2024",
+    duration: "",
+    image: crystalClear,
+  },
+  {
+    id: 13,
+    songName: "The Velvet Vibe",
+    artist: "Smooth Operator",
+    album: "Groovy Nights",
+    dateAdded: "04/17/2024",
+    duration: "",
+    image: northernLights,
+  },
+  {
+    id: 14,
+    songName: "Solar Symphony",
+    artist: "Sunburst",
+    album: "Daylight Dream",
+    dateAdded: "04/17/2024",
+    duration: "",
+    image: midnightMirage,
+  },
+  {
+    id: 15,
+    songName: "The Dreamcatchers",
+    artist: "Fantasy Flight",
+    album: "Imaginarium",
+    dateAdded: "04/17/2024",
+    duration: "4:15",
+    image: enchantedNight,
+  },
+  {
+    id: 16,
+    songName: "Stardust Serenade",
+    artist: "Cosmic Dance",
+    album: "Nebula Nights",
+    dateAdded: "04/17/2024",
+    duration: "4:15",
+    image: theWanderers,
+  },
+  {
+    id: 17,
+    songName: "The Harmonic Waves",
+    artist: "Ocean Breeze",
+    album: "Seaside Symphony",
+    dateAdded: "04/17/2024",
+    duration: "4:15",
+    image: heartfeltHarmony,
   },
 ];
