@@ -19,11 +19,11 @@
   @include flexbox(start, center, column, $spacing-20);
   width: 100%;
   padding-left: $spacing-36;
-
   &__header {
     @include flexbox(space-between, center, row, $spacing-4);
     width: 100%;
     padding: $spacing-4;
+    padding-right: $spacing-36;
     &-title {
       @include text(
         $text-size-2xl,
