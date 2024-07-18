@@ -15,6 +15,14 @@
       background-color: var(--surface-primary-active);
     }
   }
+  &-neutral {
+    background-color: var(--surface-invert);
+    color: var(--text-invert);
+    &:hover {
+      background-color: var(--surface-primary-active);
+      color: var(--surface-invert);
+    }
+  }
 
   &-small {
     @include button(small);
@@ -22,28 +30,33 @@
     &:hover {
       background-color: var(--surface-primary-active);
     }
-    &-outline {
+    &.outline {
       border: 1px solid var(--border-primary);
       color: var(--text-primary);
       &:hover {
         background-color: var(--surface-primary-active);
       }
     }
-    &-primary {
+    &.primary {
       background-color: var(--surface-warning);
       &:hover {
         background-color: var(--surface-brand);
       }
     }
+    &.neutral {
+      background-color: var(--surface-invert);
+      color: var(--text-invert);
+      &:hover {
+        background-color: var(--surface-primary-active);
+        color: var(--surface-invert);
+      }
+    }
   }
   &-icon {
-    @include button(small-square);
+    @include button(icon);
     color: var(--text-primary);
     &:hover {
       background-color: var(--surface-primary-active);
     }
   }
-}
-.btn-active {
-  background-color: var(--surface-invert);
 }

@@ -40,11 +40,10 @@
     padding: $spacing-12 $spacing-20;
   } @else if $size == small {
     padding: $spacing-8 $spacing-12;
-  } @else if $size == small-square {
+  } @else if $size == icon {
     padding: $spacing-8;
   }
 }
-
 @mixin badge($size, $color, $border-color: null) {
   @if $size == xs {
     font-size: $text-line-height-xs;

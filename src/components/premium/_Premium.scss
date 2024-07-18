@@ -11,7 +11,7 @@
       border-radius: $radius-full;
       background-color: rgba(238, 204, 68, 0.1);
     }
-    &-text {
+    &__title {
       @include text(
         $text-size-lg,
         $font-weight-medium,

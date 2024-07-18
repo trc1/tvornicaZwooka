@@ -8,14 +8,14 @@
     width: 100%;
     padding: $spacing-24 $spacing-36 $spacing-40 $spacing-36;
   }
-  &__content {
+  &__sections {
     @include flexbox(start, center, column, $spacing-32);
     width: 100%;
     height: 100%;
   }
 }
 
-.podcast-wrapper {
+.section-wrapper {
   @include flexbox(start, center, column, $spacing-20);
   width: 100%;
   padding-left: $spacing-36;
@@ -35,11 +35,16 @@
     }
   }
   &__carusel {
-    @include flexbox(start, center, row);
+    @include flexbox(start, center, row, $spacing-20);
     width: 100%;
-    overflow-x: scroll;
-    &-overflow {
-      @include flexbox(center, center, row, $spacing-24);
-    }
+  }
+}
+
+.podcast__carusel {
+  @include flexbox(start, center, row);
+  width: 100%;
+  overflow-x: scroll;
+  &-overflow {
+    @include flexbox(center, center, row, $spacing-24);
   }
 }
