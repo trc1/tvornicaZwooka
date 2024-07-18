@@ -116,7 +116,7 @@ export const playlist = [
     artist: "Timeless Tune",
     album: "Forevermore",
     dateAdded: "04/17/2024",
-    duration: "",
+    duration: "3:28",
     image: crystalClear,
   },
   {
@@ -125,7 +125,7 @@ export const playlist = [
     artist: "Smooth Operator",
     album: "Groovy Nights",
     dateAdded: "04/17/2024",
-    duration: "",
+    duration: "5:45",
     image: northernLights,
   },
   {
@@ -134,7 +134,7 @@ export const playlist = [
     artist: "Sunburst",
     album: "Daylight Dream",
     dateAdded: "04/17/2024",
-    duration: "",
+    duration: "2:47",
     image: midnightMirage,
   },
   {

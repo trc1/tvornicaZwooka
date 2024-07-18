@@ -1,6 +1,17 @@
 .playlist-table {
   width: 100%;
-  &__header-row {
+
+  &__header-cell,
+  &__body-cell {
+    padding: $spacing-8 $spacing-16;
+    text-align: start;
+    width: 375.5px;
+    vertical-align: middle;
+    &:first-child {
+      width: 50px;
+    }
+  }
+  &__header:first-child {
     border-bottom: 1px solid var(--border-primary);
   }
   &__header-cell {
@@ -10,7 +21,13 @@
       $text-line-height-s,
       var(--text-secondary)
     );
-    padding: $spacing-16;
-    text-align: start;
+  }
+  &__body-cell {
+    @include text(
+      $text-size-s,
+      $font-weight-regular,
+      $text-line-height-s,
+      var(--text-secondary)
+    );
   }
 }
