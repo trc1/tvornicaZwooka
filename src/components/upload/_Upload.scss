@@ -1,0 +1,45 @@
+.upload {
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  border-radius: $radius-base;
+  border: 1px solid var(--border-primary);
+  padding: $spacing-16;
+  @include flexbox(center, center, column, $spacing-16);
+  &__wrapper {
+    @include flexbox(center, center, column, $spacing-12);
+    &-icon-container {
+      @include flexbox(center, center, column, $spacing-8);
+      padding: $spacing-8;
+      border: 1px solid var(--border-primary);
+      border-radius: $radius-minimal;
+    }
+    &-text {
+      @include flexbox(center, center, column, $spacing-8);
+      &-description {
+        @include text(
+          $text-size-m,
+          $font-weight-regular,
+          $text-line-height-m,
+          var(--text-primary)
+        );
+        & > span {
+          @include text(
+            $text-size-m,
+            $font-weight-medium,
+            $text-line-height-m,
+            var(--text-brand)
+          );
+        }
+      }
+      &-extension {
+        @include text(
+          $text-size-s,
+          $font-weight-regular,
+          $text-line-height-s,
+          var(--text-secondary)
+        );
+      }
+    }
+  }
+}

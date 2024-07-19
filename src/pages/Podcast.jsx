@@ -1,6 +1,7 @@
 import Button from "../components/button/Button";
 import Input from "../components/input/Input";
 import Checkbox from "../components/checkbox/Checkbox";
+import Upload from "../components/upload/Upload";
 export default function Podcast() {
   return (
     <section className="podcast-section">
@@ -38,6 +39,7 @@ export default function Podcast() {
           <Checkbox label="Visible on the Portal" id="visible" />
         </div>
         <div className="podcast-section__form-upload">
+          <Upload />
           <Button className="btn-primary" label="Upload" width={100} />
         </div>
       </form>

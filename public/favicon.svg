@@ -1,14 +1,14 @@
-<svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M26.6866 52C41.046 52 52.6866 40.3594 52.6866 26C52.6866 11.6406 41.046 0 26.6866 0C12.3272 0 0.686646 11.6406 0.686646 26C0.686646 40.3594 12.3272 52 26.6866 52ZM26.6866 46.4649C37.9891 46.4649 47.1516 37.3024 47.1516 25.9999C47.1516 14.6974 37.9891 5.53495 26.6866 5.53495C15.3841 5.53495 6.22166 14.6974 6.22166 25.9999C6.22166 37.3024 15.3841 46.4649 26.6866 46.4649Z"
-        fill="url(#paint0_angular_606_97273)" />
-    <g filter="url(#filter0_i_606_97273)">
+        d="M26 52C40.3594 52 52 40.3594 52 26C52 11.6406 40.3594 0 26 0C11.6406 0 0 11.6406 0 26C0 40.3594 11.6406 52 26 52ZM26 46.4649C37.3025 46.4649 46.465 37.3024 46.465 25.9999C46.465 14.6974 37.3025 5.53495 26 5.53495C14.6975 5.53495 5.53501 14.6974 5.53501 25.9999C5.53501 37.3024 14.6975 46.4649 26 46.4649Z"
+        fill="url(#paint0_angular_1384_7509)" />
+    <g filter="url(#filter0_i_1384_7509)">
         <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M26.6867 46.4651C37.9892 46.4651 47.1517 37.3026 47.1517 26.0001C47.1517 14.6976 37.9892 5.53516 26.6867 5.53516C15.3842 5.53516 6.22168 14.6976 6.22168 26.0001C6.22168 37.3026 15.3842 46.4651 26.6867 46.4651ZM26.6867 37.1428C32.8407 37.1428 37.8295 32.154 37.8295 26C37.8295 19.846 32.8407 14.8571 26.6867 14.8571C20.5326 14.8571 15.5438 19.846 15.5438 26C15.5438 32.154 20.5326 37.1428 26.6867 37.1428Z"
-            fill="url(#paint1_angular_606_97273)" />
+            d="M26.0001 46.4651C37.3026 46.4651 46.4651 37.3026 46.4651 26.0001C46.4651 14.6976 37.3026 5.53516 26.0001 5.53516C14.6976 5.53516 5.53516 14.6976 5.53516 26.0001C5.53516 37.3026 14.6976 46.4651 26.0001 46.4651ZM26.0002 37.1428C32.1542 37.1428 37.143 32.154 37.143 26C37.143 19.846 32.1542 14.8571 26.0002 14.8571C19.8461 14.8571 14.8573 19.846 14.8573 26C14.8573 32.154 19.8461 37.1428 26.0002 37.1428Z"
+            fill="url(#paint1_angular_1384_7509)" />
     </g>
     <defs>
-        <filter id="filter0_i_606_97273" x="6.22168" y="5.53516" width="40.93" height="40.9297"
+        <filter id="filter0_i_1384_7509" x="5.53516" y="5.53516" width="40.9302" height="40.9297"
             filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
@@ -19,20 +19,20 @@
             <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
             <feColorMatrix type="matrix"
                 values="0 0 0 0 0.278667 0 0 0 0 0 0 0 0 0 0.633333 0 0 0 1 0" />
-            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_606_97273" />
+            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1384_7509" />
         </filter>
-        <radialGradient id="paint0_angular_606_97273" cx="0.5" cy="0" r="2"
+        <radialGradient id="paint0_angular_1384_7509" cx=".5" cy="0" r="2"
             gradientUnits="userSpaceOnUse"
-            gradientTransform="translate(27.6119 24.9822) rotate(115.362) scale(31.5379 39.2254)">
+            gradientTransform="translate(26.9253 24.9822) rotate(115.362) scale(31.5379 39.2254)">
             <stop stop-color="#FF61A8" />
             <stop offset="0.411458" stop-color="#6957FF" />
             <stop offset="0.59956" stop-color="#FFC83A" />
             <stop offset="0.755208" stop-color="#7F3FFF" />
             <stop offset="0.932292" stop-color="#FC00E3" />
         </radialGradient>
-        <radialGradient id="paint1_angular_606_97273" cx="0.5" cy="0" r="2"
+        <radialGradient id="paint1_angular_1384_7509" cx=".5" cy="0" r="2"
             gradientUnits="userSpaceOnUse"
-            gradientTransform="translate(27.415 25.199) rotate(115.362) scale(24.8239 30.8749)">
+            gradientTransform="translate(26.7284 25.199) rotate(115.362) scale(24.8239 30.8749)">
             <stop stop-color="#FF61A8" />
             <stop offset="0.411458" stop-color="#6957FF" />
             <stop offset="0.59956" stop-color="#FFC83A" />
