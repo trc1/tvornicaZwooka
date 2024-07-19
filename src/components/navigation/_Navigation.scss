@@ -38,6 +38,12 @@
       padding-left: $spacing-24;
       &__item {
         @include flexbox(space-between, center, row, $spacing-8);
+        @include text(
+          $text-size-s,
+          $font-weight-medium,
+          $text-line-height-s,
+          var(--text-secondary)
+        );
         width: 100%;
         padding: $spacing-8 $spacing-12;
         border-radius: $radius-base;
