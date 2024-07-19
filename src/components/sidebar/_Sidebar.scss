@@ -1,6 +1,6 @@
 .sidebar {
   flex: 1;
-  min-width: 19rem;
+  max-width: 18.8rem;
   padding: $spacing-24;
   @include flexbox(start, start, column, $spacing-24);
   background-color: var(--background-secondary);
