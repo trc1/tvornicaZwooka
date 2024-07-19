@@ -1,32 +1,21 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/header/Header";
-import Sidebar from "./components/sidebar/Sidebar";
-import Dashboard from "./pages/Dashboard";
-import Login from "./pages/Login";
-import MusicControl from "./components/music-control/MusicControl";
-import Album from "./pages/Album";
+import Dashboard from "./pages/dashboard/Dashboard";
+import Login from "./pages/login/Login";
+import Album from "./pages/album/Album";
+import Podcast from "./pages/podcast/Podcast";
 import "./styles/style.scss";
-import Podcast from "./pages/Podcast";
+import Layout from "./pages/layout/Layout";
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="album" element={<Album />} />
+          <Route path="podcast" element={<Podcast />} />
+        </Route>
       </Routes>
-      <div className="content">
-        <Sidebar />
-        <div className="main">
-          <Header />
-          <Routes>
-            <Route path="/">
-              <Route index element={<Dashboard />} />
-              <Route path="/album" element={<Album />} />
-              <Route path="/podcast" element={<Podcast />} />
-            </Route>
-          </Routes>
-          <MusicControl />
-        </div>
-      </div>
     </>
   );
 }

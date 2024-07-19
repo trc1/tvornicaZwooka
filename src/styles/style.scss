@@ -6,10 +6,10 @@
 @import "./layout";
 
 //pages
-@import "../pages/Login";
-@import "../pages/Dashboard";
-@import "../pages/Album";
-@import "../pages/Podcast";
+@import "../pages/login/Login";
+@import "../pages/dashboard/Dashboard";
+@import "../pages/album/Album";
+@import "../pages/podcast/Podcast";
 
 //components
 @import "../components/input/Input";

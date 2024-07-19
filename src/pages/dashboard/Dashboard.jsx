@@ -1,11 +1,11 @@
-import FeatureCard from "../components/feature-card/FeatureCard";
-import PodcastCard from "../components/podcast-card/PodcastCard";
-import Button from "../components/button/Button";
-import CategoryCard from "../components/category-card/CategoryCard";
-import { feature } from "../data/feature-data";
-import { podcast } from "../data/podcast-data";
-import { featured } from "../data/featured-data";
-import { category } from "../data/category-data";
+import FeatureCard from "../../components/feature-card/FeatureCard";
+import PodcastCard from "../../components/podcast-card/PodcastCard";
+import Button from "../../components/button/Button";
+import CategoryCard from "../../components/category-card/CategoryCard";
+import { feature } from "../../data/feature-data";
+import { podcast } from "../../data/podcast-data";
+import { featured } from "../../data/featured-data";
+import { category } from "../../data/category-data";
 
 export default function Dashboard() {
   return (

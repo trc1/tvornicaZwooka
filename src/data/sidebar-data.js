@@ -14,7 +14,7 @@ export const sidebarNavigation = [
     icon: HouseIcon,
     active: true,
     dropdown: false,
-    href: "/",
+    href: "/dashboard",
   },
   {
     name: "Devices",

@@ -1,6 +1,6 @@
-import LoginDecoration from "../assets/login-elements/LoginDecoration";
-import ZwookDashboard from "../assets/login-elements/ZwookDashboard";
-import LoginForm from "../components/login-form/LoginForm";
+import LoginDecoration from "../../assets/login-elements/LoginDecoration";
+import ZwookDashboard from "../../assets/login-elements/ZwookDashboard";
+import LoginForm from "../../components/login-form/LoginForm";
 
 export default function Login() {
   return (

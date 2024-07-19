@@ -1,7 +1,7 @@
-import Button from "../components/button/Button";
-import Input from "../components/input/Input";
-import Checkbox from "../components/checkbox/Checkbox";
-import Upload from "../components/upload/Upload";
+import Button from "../../components/button/Button";
+import Input from "../../components/input/Input";
+import Checkbox from "../../components/checkbox/Checkbox";
+import Upload from "../../components/upload/Upload";
 export default function Podcast() {
   return (
     <section className="podcast-section">
