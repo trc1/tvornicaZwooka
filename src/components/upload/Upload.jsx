@@ -10,7 +10,9 @@ export default function Upload() {
         </span>
         <div className="upload__wrapper-text">
           <p className="upload__wrapper-text-description">
-            <span>Click to upload</span> or drag and drop
+            <input type="file" name="upload" id="upload" />
+            <label htmlFor="upload">Click to upload </label>
+            or drag and drop
           </p>
           <p className="upload__wrapper-text-extension">
             SVG, PNG, JPEG, TIFF or GIF

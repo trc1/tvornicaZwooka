@@ -3,8 +3,8 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import Login from "./pages/login/Login";
 import Album from "./pages/album/Album";
 import Podcast from "./pages/podcast/Podcast";
-import "./styles/style.scss";
 import Layout from "./pages/layout/Layout";
+import "./styles/style.scss";
 function App() {
   return (
     <>

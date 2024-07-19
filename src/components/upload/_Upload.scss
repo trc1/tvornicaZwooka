@@ -23,13 +23,17 @@
           $text-line-height-m,
           var(--text-primary)
         );
-        & > span {
+        & > input[type="file"] {
+          display: none;
+        }
+        & > label {
           @include text(
             $text-size-m,
             $font-weight-medium,
             $text-line-height-m,
             var(--text-brand)
           );
+          cursor: pointer;
         }
       }
       &-extension {
