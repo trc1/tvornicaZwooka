@@ -14,6 +14,7 @@ export const sidebarNavigation = [
     icon: HouseIcon,
     active: true,
     dropdown: false,
+    href: "/",
   },
   {
     name: "Devices",
@@ -40,6 +41,7 @@ export const sidebarNavigation = [
     icon: MusicNoteIcon,
     active: false,
     dropdown: false,
+    href: "/album",
   },
   {
     name: "Albums",
@@ -65,5 +67,6 @@ export const sidebarNavigation = [
     notification: "Add New",
     active: false,
     dropdown: false,
+    href: "/podcast",
   },
 ];
