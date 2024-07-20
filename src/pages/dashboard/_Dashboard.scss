@@ -8,14 +8,14 @@
     width: 100%;
     padding: $spacing-24 $spacing-36 $spacing-40 $spacing-36;
   }
-  &__sections {
+  &__sections-wrapper {
     @include flexbox(start, center, column, $spacing-32);
     width: 100%;
     height: 100%;
   }
 }
 
-.section-wrapper {
+.section {
   @include flexbox(start, center, column, $spacing-20);
   width: 100%;
   padding-left: $spacing-36;
@@ -24,15 +24,15 @@
     width: 100%;
     padding: $spacing-4;
     padding-right: $spacing-36;
-    &-title {
-      @include text(
-        $text-size-2xl,
-        $font-weight-semibold,
-        $text-line-height-2xl,
-        var(--text-primary)
-      );
-      flex-grow: 1;
-    }
+  }
+  &__title {
+    @include text(
+      $text-size-2xl,
+      $font-weight-semibold,
+      $text-line-height-2xl,
+      var(--text-primary)
+    );
+    flex-grow: 1;
   }
   &__carusel {
     @include flexbox(start, center, row, $spacing-20);
@@ -40,11 +40,11 @@
   }
 }
 
-.podcast__carusel {
+.podcast-carusel {
   @include flexbox(start, center, row);
   width: 100%;
   overflow-x: scroll;
-  &-overflow {
+  &__overflow {
     @include flexbox(center, center, row, $spacing-24);
   }
 }

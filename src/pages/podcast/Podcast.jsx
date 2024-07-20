@@ -4,16 +4,16 @@ import Checkbox from "../../components/checkbox/Checkbox";
 import Upload from "../../components/upload/Upload";
 export default function Podcast() {
   return (
-    <section className="podcast-section">
-      <header className="podcast-section__header">
-        <h1 className="podcast-section__header-text">Create New Podcast</h1>
-        <div className="podcast-section__header-wrapper">
+    <section className="podcast">
+      <header className="podcast__header">
+        <h1 className="podcast__text">Create New Podcast</h1>
+        <div className="podcast__button-wrapper">
           <Button className="btn-outline" label="Cancel" />
           <Button className="btn-primary" label="Save" />
         </div>
       </header>
-      <form className="podcast-section__form">
-        <div className="podcast-section__form-inputs">
+      <form className="podcast__form">
+        <div className="podcast__input-wrapper">
           <Input
             label="Title"
             type="text"
@@ -38,7 +38,7 @@ export default function Podcast() {
           <Checkbox label="Make Default" id="makeDefault" />
           <Checkbox label="Visible on the Portal" id="visible" />
         </div>
-        <div className="podcast-section__form-upload">
+        <div className="podcast__upload">
           <Upload />
           <Button className="btn-primary" label="Upload" width={100} />
         </div>

@@ -15,14 +15,14 @@ export default function Dashboard() {
           <FeatureCard key={item.title} data={item} />
         ))}
       </section>
-      <div className="content-section__sections">
-        <section className="section-wrapper">
-          <header className="section-wrapper__header">
-            <h3 className="section-wrapper__header-title">Podcasts</h3>
+      <div className="content-section__sections-wrapper">
+        <section className="section">
+          <header className="section__header">
+            <h3 className="section__title">Podcasts</h3>
             <Button className="btn-small outline" label="View All" />
           </header>
-          <div className="podcast__carusel">
-            <div className="podcast__carusel-overflow">
+          <div className="podcast-carusel">
+            <div className="podcast-carusel__overflow">
               {podcast.map((item) => (
                 <PodcastCard
                   key={item.title}
@@ -35,25 +35,25 @@ export default function Dashboard() {
             </div>
           </div>
         </section>
-        <section className="section-wrapper">
-          <header className="section-wrapper__header">
-            <h3 className="section-wrapper__header-title">Featured</h3>
+        <section className="section">
+          <header className="section__header">
+            <h3 className="section__title">Featured</h3>
             <Button className="btn-small neutral" label="All" />
             <Button className="btn-small outline" label="Premium" />
             <Button className="btn-small outline" label="Disabled" />
           </header>
-          <div className="section-wrapper__carusel">
+          <div className="section__carusel">
             {featured.map((item, index) => (
               <CategoryCard key={index} image={item.image} title={item.title} />
             ))}
           </div>
         </section>
-        <section className="section-wrapper">
-          <header className="section-wrapper__header">
-            <h3 className="section-wrapper__header-title">Categories</h3>
+        <section className="section">
+          <header className="section__header">
+            <h3 className="section__title">Categories</h3>
             <Button className="btn-small outline" label="View All" />
           </header>
-          <div className="section-wrapper__carusel">
+          <div className="section__carusel">
             {category.map((item, index) => (
               <CategoryCard key={index} image={item.image} title={item.title} />
             ))}
