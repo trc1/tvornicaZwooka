@@ -5,16 +5,16 @@ export default function Upload() {
   return (
     <div className="upload">
       <div className="upload__wrapper">
-        <span className="upload__wrapper-icon-container">
+        <span className="upload__icon-container">
           <CloudUploadIcon />
         </span>
-        <div className="upload__wrapper-text">
-          <p className="upload__wrapper-text-description">
+        <div className="upload__text-wrapper">
+          <p className="upload__description">
             <input type="file" name="upload" id="upload" />
             <label htmlFor="upload">Click to upload </label>
             or drag and drop
           </p>
-          <p className="upload__wrapper-text-extension">
+          <p className="upload__extension">
             SVG, PNG, JPEG, TIFF or GIF
           </p>
         </div>

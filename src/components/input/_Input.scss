@@ -22,9 +22,9 @@
       $text-line-height-m,
       var(--text-primary-placeholder)
     );
-    &-field {
-      width: 100%;
-      resize: none;
-    }
+  }
+  &__field {
+    width: 100%;
+    resize: none;
   }
 }

@@ -6,7 +6,7 @@ export default function Premium() {
   return (
     <aside className="premium-container">
       <header className="premium-container__header">
-        <div className="premium-container__header-icon">
+        <div className="premium-container__icon">
           <StarIcon />
         </div>
         <h3 className="premium-container__title">Update Premium</h3>

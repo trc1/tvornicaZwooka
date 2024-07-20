@@ -8,9 +8,9 @@ export default function Checkbox({ label, id }) {
           type="checkbox"
           name={id}
           id={id}
-          className="checkbox-wrapper__container-checkbox"
+          className="checkbox-wrapper__checkbox"
         />
-        <Check className="checkbox-wrapper__container-checkbox-icon" />
+        <Check className="checkbox-wrapper__icon" />
       </div>
       <label htmlFor={id} className="checkbox-wrapper__label">
         {label}

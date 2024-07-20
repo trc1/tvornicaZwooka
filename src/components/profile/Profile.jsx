@@ -8,13 +8,13 @@ export default function Profile() {
         <img
           src={avatar}
           alt="Avatar image"
-          className="user-container__image-wrapper-image"
+          className="user-container__image"
         />
-        <span className="user-container__image-wrapper-status"></span>
+        <span className="user-container__status"></span>
       </div>
       <div className="user-container__text-wrapper">
-        <h4 className="user-container__text-wrapper-name">Albert Flores</h4>
-        <p className="user-container__text-wrapper-email">albert@flores.com</p>
+        <h4 className="user-container__name">Albert Flores</h4>
+        <p className="user-container__email">albert@flores.com</p>
       </div>
       <ArrowIcon />
     </div>

@@ -8,42 +8,42 @@
   @include flexbox(center, center, column, $spacing-16);
   &__wrapper {
     @include flexbox(center, center, column, $spacing-12);
-    &-icon-container {
-      @include flexbox(center, center, column, $spacing-8);
-      padding: $spacing-8;
-      border: 1px solid var(--border-primary);
-      border-radius: $radius-minimal;
+  }
+  &__icon-container {
+    @include flexbox(center, center, column, $spacing-8);
+    padding: $spacing-8;
+    border: 1px solid var(--border-primary);
+    border-radius: $radius-minimal;
+  }
+  &__text-wrapper {
+    @include flexbox(center, center, column, $spacing-8);
+  }
+  &__description {
+    @include text(
+      $text-size-m,
+      $font-weight-regular,
+      $text-line-height-m,
+      var(--text-primary)
+    );
+    & > input[type="file"] {
+      display: none;
     }
-    &-text {
-      @include flexbox(center, center, column, $spacing-8);
-      &-description {
-        @include text(
-          $text-size-m,
-          $font-weight-regular,
-          $text-line-height-m,
-          var(--text-primary)
-        );
-        & > input[type="file"] {
-          display: none;
-        }
-        & > label {
-          @include text(
-            $text-size-m,
-            $font-weight-medium,
-            $text-line-height-m,
-            var(--text-brand)
-          );
-          cursor: pointer;
-        }
-      }
-      &-extension {
-        @include text(
-          $text-size-s,
-          $font-weight-regular,
-          $text-line-height-s,
-          var(--text-secondary)
-        );
-      }
+    & > label {
+      @include text(
+        $text-size-m,
+        $font-weight-medium,
+        $text-line-height-m,
+        var(--text-brand)
+      );
+      cursor: pointer;
     }
+  }
+  &__extension {
+    @include text(
+      $text-size-s,
+      $font-weight-regular,
+      $text-line-height-s,
+      var(--text-secondary)
+    );
   }
 }

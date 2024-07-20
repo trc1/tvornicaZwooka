@@ -10,7 +10,7 @@ export default function PodcastCard({ title, image, badge, status }) {
       <PodcastTag status={status} />
       <div className="podcast-card__overlay"></div>
       <div className="podcast-card__wrapper">
-        <h3 className="podcast-card__wrapper-title">{title}</h3>
+        <h3 className="podcast-card__title">{title}</h3>
         {badge && <Badge label="Premium" className="badge-xs-brand" />}
       </div>
     </div>

@@ -8,8 +8,8 @@
   }
   &__right {
     @include flexbox(center, center, row, $spacing-20);
-    &-button-wrapper {
-      @include flexbox(center, center, row, $spacing-4);
-    }
+  }
+  &__button-wrapper {
+    @include flexbox(center, center, row, $spacing-4);
   }
 }

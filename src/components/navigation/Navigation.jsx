@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { sidebarNavigation } from "../../data/sidebar-data";
-import Badge from "../badge/Badge";
-import ArrowIcon from "../../assets/icons/ArrowIcon";
 import Subnavigation from "../subnavigation/Subnavigation";
 import { Link } from "react-router-dom";
+import NavigationItem from "../navigation-item/NavigationItem";
 
 export default function Navigation() {
   const initialActive = sidebarNavigation.findIndex((item) => item.active);
@@ -19,26 +18,15 @@ export default function Navigation() {
         return (
           <div key={index} className="navigation-wrapper__list">
             <Link to={item.href} replace>
-              <li
-                className={`navigation-wrapper__item ${
-                  index === active ? "active" : ""
-                }`}
-                onClick={() => handleItemClick(index)}
-              >
-                <div className="navigation-wrapper__item-text">
-                  <IconComponent />
-                  <p className="navigation-wrapper__item-name">{item.name}</p>
-                </div>
-                <div className="navigation-wrapper__item-notifications">
-                  {item.notification && (
-                    <Badge
-                      label={item.notification}
-                      className="badge-xs-primary"
-                    />
-                  )}
-                  {item.subnavigation && index === active && <ArrowIcon />}
-                </div>
-              </li>
+              <NavigationItem
+                name={item.name}
+                notification={item.notification}
+                subnavigation={item.subnavigation}
+                index={index}
+                active={active}
+                handleItemClick={handleItemClick}
+                IconComponent={IconComponent}
+              />
             </Link>
             {item.subnavigation && index === active && (
               <Subnavigation value={item.subnavigation} />

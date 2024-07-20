@@ -23,7 +23,7 @@ export default function Input({
           <textarea
             id={id}
             placeholder={placeholder}
-            className="input-wrapper__container-field"
+            className="input-wrapper__field"
             rows={rows}
             style={{ resize: "none" }}
           />
@@ -32,7 +32,7 @@ export default function Input({
             type={type}
             id={id}
             placeholder={placeholder}
-            className="input-wrapper__container-field"
+            className="input-wrapper__field"
           />
         )}
       </div>

@@ -11,9 +11,9 @@ export default function FeatureCard({ data }) {
       <div className="feature-card__icon">
         <ArrowDiagonalIcon />
       </div>
-      <div className="feature-card__info">
-        <h2 className="feature-card__info-title">{data.title}</h2>
-        <p className="feature-card__info-description">{data.description}</p>
+      <div className="feature-card__info-wrapper">
+        <h2 className="feature-card__title">{data.title}</h2>
+        <p className="feature-card__description">{data.description}</p>
       </div>
     </div>
   );

@@ -6,23 +6,23 @@
     border: 1px solid var(--border-primary);
     border-radius: $radius-minimal;
   }
-  &__text {
+  &__text-wrapper {
     @include flexbox(center, start);
-    &-name {
-      @include text(
-        $text-size-m,
-        $font-weight-regular,
-        $text-line-height-m,
-        var(--text-primary)
-      );
-    }
-    &-artist {
-      @include text(
-        $text-size-xs,
-        $font-weight-medium,
-        $text-line-height-xs,
-        var(--text-primary-placeholder)
-      );
-    }
+  }
+  &__name {
+    @include text(
+      $text-size-m,
+      $font-weight-regular,
+      $text-line-height-m,
+      var(--text-primary)
+    );
+  }
+  &__artist {
+    @include text(
+      $text-size-xs,
+      $font-weight-medium,
+      $text-line-height-xs,
+      var(--text-primary-placeholder)
+    );
   }
 }

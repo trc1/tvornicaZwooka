@@ -1,6 +1,7 @@
 .music-navigation__wrapper {
   @include flexbox(center, center, row, $spacing-36);
-  &-icon {
+  .music-navigation__icon {
+    cursor: pointer;
     position: relative;
     &::after {
       content: "";
@@ -20,14 +21,14 @@
         opacity: 1;
       }
     }
-    &.active {
+    &--active {
       &::after {
         opacity: 1;
         background-color: var(--surface-brand);
       }
-    }
-    &.active > svg > path {
-      stroke: var(--surface-brand);
+      svg > path {
+        stroke: var(--surface-brand);
+      }
     }
   }
 }

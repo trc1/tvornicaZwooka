@@ -10,27 +10,26 @@
     width: 100%;
   }
 
-  &__info {
+  &__info-wrapper {
     width: 100%;
     text-align: center;
     @include flexbox(center, center, column, $spacing-4);
+  }
+  &__welcome {
+    @include text($text-size-xl, $font-weight-semibold, $text-line-height-xl);
+  }
 
-    &-welcome {
-      @include text($text-size-xl, $font-weight-semibold, $text-line-height-xl);
-    }
-
-    &-signup {
-      @include text(
-        $text-size-m,
-        $font-weight-medium,
-        $text-line-height-m,
-        var(--text-primary-placeholder)
-      );
-      &-link {
-        color: var(--text-primary);
-        margin-left: $spacing-4;
-      }
-    }
+  &__signup {
+    @include text(
+      $text-size-m,
+      $font-weight-medium,
+      $text-line-height-m,
+      var(--text-primary-placeholder)
+    );
+  }
+  &__link {
+    color: var(--text-primary);
+    margin-left: $spacing-4;
   }
   &__separator {
     position: relative;

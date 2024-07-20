@@ -5,20 +5,20 @@
   border-radius: $radius-rounded;
   &__header {
     @include flexbox(start, center, row, $spacing-12);
-    &-icon {
-      display: flex;
-      padding: $spacing-12;
-      border-radius: $radius-full;
-      background-color: rgba(238, 204, 68, 0.1);
-    }
-    &__title {
-      @include text(
-        $text-size-lg,
-        $font-weight-medium,
-        $text-line-height-l,
-        var(--text-primary)
-      );
-    }
+  }
+  &__icon {
+    display: flex;
+    padding: $spacing-12;
+    border-radius: $radius-full;
+    background-color: rgba(238, 204, 68, 0.1);
+  }
+  &__title {
+    @include text(
+      $text-size-lg,
+      $font-weight-medium,
+      $text-line-height-l,
+      var(--text-primary)
+    );
   }
   &__description {
     @include text(

@@ -10,11 +10,11 @@ export default function LoginForm() {
   return (
     <form className="login-form" role="form">
       <LogoIcon className="login-form__logo" />
-      <div className="login-form__info">
-        <p className="login-form__info-welcome">Welcome Back</p>
-        <p className="login-form__info-signup">
+      <div className="login-form__info-wrapper">
+        <p className="login-form__welcome">Welcome Back</p>
+        <p className="login-form__signup">
           Don’t have an account yet?
-          <a href="#" className="login-form__info-signup-link">
+          <a href="#" className="login-form__link">
             Sign Up
           </a>
         </p>

@@ -1,0 +1,29 @@
+.navigation-item {
+  @include flexbox(space-between, center, row, $spacing-8);
+  width: 100%;
+  padding: $spacing-8 $spacing-12;
+  border-radius: $radius-base;
+  &:hover {
+    cursor: pointer;
+    background-color: var(--surface-primary-active);
+  }
+  &.active {
+    background-color: var(--surface-primary-active);
+    cursor: default;
+  }
+  &__text-wrapper {
+    @include flexbox(start, center, row, $spacing-12);
+    flex-grow: 1;
+  }
+  &__name {
+    @include text(
+      $text-size-m,
+      $font-weight-medium,
+      $text-line-height-m,
+      var(--text-primary)
+    );
+  }
+  &__notifications {
+    @include flexbox(start, center, row, $spacing-12);
+  }
+}

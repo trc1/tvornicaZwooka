@@ -8,19 +8,19 @@ export default function MusicNavigation() {
   return (
     <nav className="music-navigation">
       <ol className="music-navigation__wrapper">
-        <li className="music-navigation__wrapper-icon active">
+        <li className="music-navigation__icon music-navigation__icon--active">
           <ShuffleIcon />
         </li>
-        <li className="music-navigation__wrapper-icon">
+        <li className="music-navigation__icon">
           <PrevIcon />
         </li>
-        <li className="music-navigation__wrapper-icon">
+        <li className="music-navigation__icon">
           <PlayIcon />
         </li>
-        <li className="music-navigation__wrapper-icon">
+        <li className="music-navigation__icon">
           <NextIcon />
         </li>
-        <li className="music-navigation__wrapper-icon">
+        <li className="music-navigation__icon">
           <RepeatIcon />
         </li>
       </ol>

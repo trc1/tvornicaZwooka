@@ -5,6 +5,7 @@
   padding: $spacing-12;
   border-radius: $radius-base;
   position: relative;
+  overflow: hidden;
 
   &__overlay {
     position: absolute;
@@ -20,14 +21,14 @@
     @include flexbox(space-between, center, row);
     width: 100%;
     z-index: 2;
-    &-title {
-      @include text(
-        $text-size-m,
-        $font-weight-medium,
-        $text-line-height-m,
-        var(--text-neutral)
-      );
-      flex-grow: 1;
-    }
+  }
+  &__title {
+    @include text(
+      $text-size-m,
+      $font-weight-medium,
+      $text-line-height-m,
+      var(--text-neutral)
+    );
+    flex-grow: 1;
   }
 }

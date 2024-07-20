@@ -6,51 +6,23 @@
     width: inherit;
     height: inherit;
   }
-  &__item {
-    @include flexbox(space-between, center, row, $spacing-8);
-    width: 100%;
-    padding: $spacing-8 $spacing-12;
-    border-radius: $radius-base;
-    &:hover {
-      cursor: pointer;
-      background-color: var(--surface-primary-active);
-    }
-    &.active {
-      background-color: var(--surface-primary-active);
-      cursor: default;
-    }
-    &-text {
-      @include flexbox(start, center, row, $spacing-12);
-      flex-grow: 1;
-    }
-    &-name {
+
+  &-subnavigation {
+    padding-left: $spacing-24;
+    &__item {
+      @include flexbox(space-between, center, row, $spacing-8);
       @include text(
-        $text-size-m,
+        $text-size-s,
         $font-weight-medium,
-        $text-line-height-m,
-        var(--text-primary)
+        $text-line-height-s,
+        var(--text-secondary)
       );
-    }
-    &-notifications {
-      @include flexbox(start, center, row, $spacing-12);
-    }
-    &-subnavigation {
-      padding-left: $spacing-24;
-      &__item {
-        @include flexbox(space-between, center, row, $spacing-8);
-        @include text(
-          $text-size-s,
-          $font-weight-medium,
-          $text-line-height-s,
-          var(--text-secondary)
-        );
-        width: 100%;
-        padding: $spacing-8 $spacing-12;
-        border-radius: $radius-base;
-        &:hover {
-          cursor: pointer;
-          background-color: var(--surface-primary-active);
-        }
+      width: 100%;
+      padding: $spacing-8 $spacing-12;
+      border-radius: $radius-base;
+      &:hover {
+        cursor: pointer;
+        background-color: var(--surface-primary-active);
       }
     }
   }

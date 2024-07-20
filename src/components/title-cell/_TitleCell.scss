@@ -6,22 +6,21 @@
     border: 1px solid var(--border-primary);
     border-radius: $radius-minimal;
   }
-  &__text-wrapper {
-    &-name {
-      @include text(
-        $text-size-m,
-        $font-weight-semibold,
-        $text-line-height-m,
-        var(--text-primary)
-      );
-    }
-    &-email {
-      @include text(
-        $text-size-s,
-        $font-weight-medium,
-        $text-line-height-s,
-        var(--text-primary-placeholder)
-      );
-    }
+
+  &__name {
+    @include text(
+      $text-size-m,
+      $font-weight-semibold,
+      $text-line-height-m,
+      var(--text-primary)
+    );
+  }
+  &__email {
+    @include text(
+      $text-size-s,
+      $font-weight-medium,
+      $text-line-height-s,
+      var(--text-primary-placeholder)
+    );
   }
 }

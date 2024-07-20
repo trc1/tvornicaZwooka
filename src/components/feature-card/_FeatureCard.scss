@@ -4,24 +4,24 @@
   border-radius: $radius-base;
   width: 100%;
   height: 300px;
-
-  &__info {
+  cursor: pointer;
+  &__info-wrapper {
     width: 100%;
-    &-title {
-      @include text(
-        $display-size-m,
-        $font-weight-medium,
-        $display-line-height-m,
-        var(--text-neutral)
-      );
-    }
-    &-description {
-      @include text(
-        $text-size-m,
-        $font-weight-semibold,
-        $text-line-height-m,
-        var(--text-neutral)
-      );
-    }
+  }
+  &__title {
+    @include text(
+      $display-size-m,
+      $font-weight-medium,
+      $display-line-height-m,
+      var(--text-neutral)
+    );
+  }
+  &__description {
+    @include text(
+      $text-size-m,
+      $font-weight-semibold,
+      $text-line-height-m,
+      var(--text-neutral)
+    );
   }
 }

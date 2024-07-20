@@ -7,23 +7,23 @@
   &__image {
     border-radius: $radius-minimal;
   }
-  &__info {
+  &__info-wrapper {
     @include flexbox(start, start, column);
-    &-description {
-      @include text(
-        $text-size-m,
-        $font-weight-semibold,
-        $text-line-height-m,
-        var(--text-neutral)
-      );
-    }
-    &-title {
-      @include text(
-        $display-size-2xl,
-        $font-weight-medium,
-        $display-line-height-2xl,
-        var(--text-neutral)
-      );
-    }
+  }
+  &__description {
+    @include text(
+      $text-size-m,
+      $font-weight-semibold,
+      $text-line-height-m,
+      var(--text-neutral)
+    );
+  }
+  &__title {
+    @include text(
+      $display-size-2xl,
+      $font-weight-medium,
+      $display-line-height-2xl,
+      var(--text-neutral)
+    );
   }
 }

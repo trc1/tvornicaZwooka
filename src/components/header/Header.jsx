@@ -17,7 +17,7 @@ export default function Header() {
         />
       </div>
       <div className="header__right">
-        <div className="header__right-button-wrapper">
+        <div className="header__button-wrapper">
           <Button className="btn-icon" icon={<GreaphNeutralIcon />} />
           <Button className="btn-icon" icon={<BellIcon />} />
         </div>
