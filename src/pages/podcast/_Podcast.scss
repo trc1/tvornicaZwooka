@@ -26,6 +26,7 @@
   }
   &__input-wrapper {
     width: 100%;
+    flex: 2;
     padding: $spacing-24;
     background-color: var(--background-secondary);
     border-radius: $radius-rounded;
@@ -34,6 +35,7 @@
   &__upload {
     width: 100%;
     height: 100%;
+    flex: 1;
     padding: $spacing-24;
     border-radius: $radius-rounded;
     background-color: var(--background-secondary);
