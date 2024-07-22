@@ -17,9 +17,9 @@ export default function Premium() {
       </p>
       <ProgressBar />
       <div className="premium-container__buttons-container">
-        <Button className="btn-small" label="Dismiss" />
+        <Button className="btn-small-text" label="Dismiss" />
         <Button
-          className="btn-small"
+          className="btn-small-text"
           label="Upgrade Plan"
           color="var(--text-warning)"
         />

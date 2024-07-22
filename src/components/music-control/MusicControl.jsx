@@ -7,8 +7,8 @@ import Timeline from "../timeline/Timeline";
 import MusicNavigation from "../music-navigation/MusicNavigation";
 
 export default function MusicControl() {
-  const [volume, setVolume] = useState(50); // Initial volume set to 50%
-
+  const [volume, setVolume] = useState(50);
+  
   const currentSong = playlist[0];
 
   const handleVolumeChange = (newVolume) => {
@@ -36,7 +36,7 @@ export default function MusicControl() {
           color="var(--text-primary)"
           cursor="pointer"
           fill={volume}
-          onClick={handleVolumeChange}
+          changeVolume={handleVolumeChange}
         />
       </div>
     </div>

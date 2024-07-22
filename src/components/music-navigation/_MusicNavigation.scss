@@ -15,6 +15,10 @@
       border-radius: $radius-full;
       opacity: 0;
     }
+    &:hover {
+      opacity: 0.7;
+    }
+
     &:hover:first-child,
     &:hover:last-child {
       &::after {

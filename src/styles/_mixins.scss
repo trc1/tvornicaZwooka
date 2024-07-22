@@ -25,7 +25,7 @@
   color: $color;
 }
 
-@mixin button($size: regular, $border-radius: $radius-base) {
+@mixin button($size) {
   @include flexbox(center, center, row, $spacing-8);
   @include text(
     $text-size-m,
@@ -33,8 +33,9 @@
     $text-line-height-m,
     var(--text-dark)
   );
-  border-radius: $border-radius;
+  border-radius: $radius-base;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 
   @if $size == regular {
     padding: $spacing-12 $spacing-20;
@@ -44,6 +45,7 @@
     padding: $spacing-8;
   }
 }
+
 @mixin badge($size, $color, $border-color: null) {
   @if $size == xs {
     font-size: $text-line-height-xs;

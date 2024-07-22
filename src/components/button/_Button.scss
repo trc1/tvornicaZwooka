@@ -1,10 +1,15 @@
 .btn {
-  @include button();
+  @include button(regular);
 
   &-primary {
     background-color: var(--surface-warning);
     &:hover {
-      background-color: var(--surface-brand);
+      background-color: var(--surface-brand-hover);
+      color: var(--text-invert);
+    }
+    &:focus {
+      background-color: var(--surface-brand-focused);
+      color: var(--text-invert);
     }
   }
 
@@ -13,6 +18,10 @@
     color: var(--text-primary);
     &:hover {
       background-color: var(--surface-primary-active);
+    }
+    &:focus,
+    &:active {
+      border: 2px solid var(--border-primary);
     }
   }
   &-neutral {
@@ -23,40 +32,51 @@
       color: var(--surface-invert);
     }
   }
+}
 
-  &-small {
+.btn-small {
+  &-outline {
     @include button(small);
+    border: 1px solid var(--border-primary);
     color: var(--text-primary);
     &:hover {
       background-color: var(--surface-primary-active);
-    }
-    &.outline {
-      border: 1px solid var(--border-primary);
-      color: var(--text-primary);
-      &:hover {
-        background-color: var(--surface-primary-active);
-      }
-    }
-    &.primary {
-      background-color: var(--surface-warning);
-      &:hover {
-        background-color: var(--surface-brand);
-      }
-    }
-    &.neutral {
-      background-color: var(--surface-invert);
-      color: var(--text-invert);
-      &:hover {
-        background-color: var(--surface-primary-active);
-        color: var(--surface-invert);
-      }
     }
   }
-  &-icon {
-    @include button(icon);
-    color: var(--text-primary);
+  &-primary {
+    @include button(small);
+    background-color: var(--surface-warning);
+    &:hover {
+      background-color: var(--surface-brand);
+      color: var(--text-invert);
+    }
+    &:focus {
+      background-color: var(--surface-brand-focused);
+      color: var(--text-invert);
+    }
+  }
+  &-neutral {
+    @include button(small);
+    background-color: var(--surface-invert);
+    color: var(--text-invert);
+    &:hover {
+      background-color: var(--surface-primary-active);
+      color: var(--surface-invert);
+    }
+  }
+  &-text {
+    @include button(small);
+    background-color: transparent;
     &:hover {
       background-color: var(--surface-primary-active);
     }
+  }
+}
+
+.btn-icon {
+  @include button(icon);
+  color: var(--text-primary);
+  &:hover {
+    background-color: var(--surface-primary-active);
   }
 }

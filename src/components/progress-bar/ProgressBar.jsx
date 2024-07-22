@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function ProgressBar({
   width,
@@ -6,9 +6,11 @@ export default function ProgressBar({
   color,
   fill,
   cursor = "default",
-  onClick,
+  changeVolume,
 }) {
   const progressBarRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+
   const fillStyles = {
     width: fill ? `${fill}%` : "84%",
     backgroundColor: color,
@@ -21,18 +23,37 @@ export default function ProgressBar({
     cursor: cursor,
   };
 
-  const handleClick = (e) => {
+  const updateFill = (e) => {
     const rect = progressBarRef.current.getBoundingClientRect();
     const offsetX = e.clientX - rect.left;
     const newFill = (offsetX / rect.width) * 100;
-    onClick(newFill);
+
+    const fill = Math.min(Math.max(newFill, 0), 100);
+    changeVolume(fill);
+  };
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    updateFill(e);
+  };
+
+  const handleMouseMove = (e) => {
+    if (isDragging) {
+      updateFill(e);
+    }
+  };
+  const handleMouseUp = () => {
+    setIsDragging(false);
   };
 
   return (
     <div
       className="progress-bar"
       style={progressBarStyles}
-      onClick={handleClick}
+      onMouseDown={handleMouseDown}
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
+      onMouseLeave={() => setIsDragging(false)}
       ref={progressBarRef}
     >
       <div className="progress-bar__fill" style={fillStyles}></div>

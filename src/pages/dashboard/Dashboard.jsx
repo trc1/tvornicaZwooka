@@ -19,7 +19,7 @@ export default function Dashboard() {
         <section className="section">
           <header className="section__header">
             <h3 className="section__title">Podcasts</h3>
-            <Button className="btn-small outline" label="View All" />
+            <Button className="btn-small-outline" label="View All" />
           </header>
           <div className="podcast-carusel">
             <div className="podcast-carusel__overflow">
@@ -38,9 +38,9 @@ export default function Dashboard() {
         <section className="section">
           <header className="section__header">
             <h3 className="section__title">Featured</h3>
-            <Button className="btn-small neutral" label="All" />
-            <Button className="btn-small outline" label="Premium" />
-            <Button className="btn-small outline" label="Disabled" />
+            <Button className="btn-small-neutral" label="All" />
+            <Button className="btn-small-outline" label="Premium" />
+            <Button className="btn-small-outline" label="Disabled" />
           </header>
           <div className="section__carusel">
             {featured.map((item, index) => (
@@ -51,7 +51,7 @@ export default function Dashboard() {
         <section className="section">
           <header className="section__header">
             <h3 className="section__title">Categories</h3>
-            <Button className="btn-small outline" label="View All" />
+            <Button className="btn-small-outline" label="View All" />
           </header>
           <div className="section__carusel">
             {category.map((item, index) => (
