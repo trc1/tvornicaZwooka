@@ -6,6 +6,7 @@
   border-radius: $radius-rounded;
   &__image {
     border-radius: $radius-minimal;
+    overflow: hidden;
   }
   &__info-wrapper {
     @include flexbox(start, start, column);

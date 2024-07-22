@@ -5,20 +5,20 @@ export default function FeatureContainer({
   playlistCover,
 }) {
   return (
-    <div
+    <section
       className="feature-container"
       style={{ background: `url(${image}) no-repeat center center / cover` }}
+      aria-label={`Feature: ${title}`}
     >
-      <img
-        src={playlistCover}
-        alt={`Image of ${title} playlist.`}
-        className="feature-container__image"
-      />
+      <figure className="feature-container__image">
+        <img src={playlistCover} alt={`${title} playlist cover`} />
+      </figure>
+
       <div className="feature-container__info-wrapper">
-        <p className="feature-container__description">Playlist</p>
+        <h2 className="feature-container__subtitle">Playlist</h2>
         <h1 className="feature-container__title">{title}</h1>
         <p className="feature-container__description">{description}</p>
       </div>
-    </div>
+    </section>
   );
 }

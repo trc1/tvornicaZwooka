@@ -3,7 +3,7 @@ export default function TitleCell({ image, artist, song, album }) {
     <div className="title-cell">
       <img
         src={image}
-        alt={`Image of ${album} playing`}
+        alt={`Album cover for ${album}`}
         className="title-cell__image"
       />
       <div className="title-cell__text-wrapper">
