@@ -5,6 +5,10 @@
   &__list {
     width: inherit;
     height: inherit;
+    &:focus-within {
+      border-radius: $radius-base;
+      background-color: var(--surface-primary-active);
+    }
   }
 
   &-subnavigation {

@@ -1,6 +1,6 @@
 .btn {
   @include button(regular);
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   &-primary {
     background-color: var(--surface-warning);
     &:hover {
@@ -19,8 +19,7 @@
     &:hover {
       background-color: var(--surface-primary-active);
     }
-    &:focus,
-    &:active {
+    &:focus {
       border: 2px solid var(--border-primary);
     }
   }
@@ -35,7 +34,7 @@
 }
 
 .btn-small {
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   &-outline {
     @include button(small);
     border: 1px solid var(--border-primary);
@@ -76,7 +75,7 @@
 }
 
 .btn-icon {
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   @include button(icon);
   color: var(--text-primary);
   &:hover {

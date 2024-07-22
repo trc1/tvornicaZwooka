@@ -126,7 +126,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-input, button, textarea {
+a,
+input,
+button,
+textarea {
   appearance: none;
   border: none;
   outline: none;
@@ -135,4 +138,8 @@ input, button, textarea {
   font-family: inherit;
   font-size: inherit;
   background-color: transparent;
+  &:focus-visible,
+  &:focus {
+    outline: none;
+  }
 }
