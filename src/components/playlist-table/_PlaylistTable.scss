@@ -1,6 +1,11 @@
 .playlist-table {
   width: 100%;
-
+  &__row {
+    cursor: pointer;
+    &:hover {
+      background-color: var(--surface-primary-active);
+    }
+  }
   &__cell {
     padding: $spacing-8 $spacing-16;
     text-align: start;

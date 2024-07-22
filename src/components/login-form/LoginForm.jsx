@@ -6,7 +6,7 @@ import LockIcon from "../../assets/icons/LockIcon";
 import Button from "../../components/button/Button";
 import GoogleIcon from "../../assets/icons/GoogleIcon";
 
-export default function LoginForm() {
+export default function LoginForm({ setIsLogin, isLogin }) {
   return (
     <form className="login-form" role="form">
       <LogoIcon className="login-form__logo" />
@@ -21,11 +21,24 @@ export default function LoginForm() {
       </div>
       <Input type="text" placeholder="Email Address" icon={<EmailIcon />} />
       <Input type="password" placeholder="Password" icon={<LockIcon />} />
-      <Link to={"/dashboard"} style={{ width: "100%" }}>
-        <Button className="btn-primary" label="Login" width={100} />
+      <Link
+        to={"/dashboard"}
+        style={{ width: "100%" }}
+        onClick={() => setIsLogin(!isLogin)}
+      >
+        <Button
+          className="btn-primary"
+          label="Login"
+          width={100}
+          onClick={() => setIsLogin(!isLogin)}
+        />
       </Link>
       <div className="login-form__separator">or</div>
-      <Link to={"/dashboard"} style={{ width: "100%" }}>
+      <Link
+        to={"/dashboard"}
+        style={{ width: "100%" }}
+        onClick={() => setIsLogin(!isLogin)}
+      >
         <Button
           className="btn-outline"
           label="Authorize with Google"
