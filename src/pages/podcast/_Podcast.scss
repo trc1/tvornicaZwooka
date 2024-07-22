@@ -20,7 +20,7 @@
     @include flexbox(center, center, row, $spacing-12);
   }
   &__form {
-    @include flexbox(start, censtarter, row, $spacing-20);
+    @include flexbox(start, start, row, $spacing-20);
     width: 100%;
     padding-top: $spacing-40;
   }

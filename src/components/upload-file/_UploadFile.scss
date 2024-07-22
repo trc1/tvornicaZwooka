@@ -1,0 +1,66 @@
+.upload-file {
+  @include flexbox(start, start, column, $spacing-12);
+  width: 100%;
+  padding: $spacing-12 $spacing-20;
+  border: 1px solid var(--border-primary);
+  border-radius: $radius-base;
+  transition: 0.3s ease-in-out;
+  &--error {
+    border: 2px solid var(--border-error);
+  }
+  &:hover {
+    border: 1px solid var(--border-brand);
+    box-sizing: border-box;
+  }
+  &__wrapper {
+    @include flexbox(center, start, row, $spacing-12);
+    padding: $spacing-12 $spacing-20;
+    width: 100%;
+  }
+  &__text-wrapper {
+    @include flexbox(start, start, column);
+    flex: 1;
+  }
+  &__file-name {
+    @include text($text-size-m, $font-weight-regular, $text-line-height-m);
+  }
+  &__file-size {
+    @include text(
+      $text-size-s,
+      $font-weight-medium,
+      $text-line-height-s,
+      var(--text-primary-placeholder)
+    );
+  }
+  &__delete-icon {
+    cursor: pointer;
+    padding: $spacing-8;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &__progress-wrapper {
+    @include flexbox(center, center, row, $spacing-8);
+    @include text(
+      $text-size-s,
+      $font-weight-semibold,
+      $text-line-height-s,
+      var(--text-primary)
+    );
+    width: 100%;
+    transition: 0.3s ease-in-out;
+  }
+  &__error-wrapper {
+    @include flexbox(start, center, row, $spacing-8);
+    width: 100%;
+    padding: $spacing-8 $spacing-12;
+  }
+  &__error-message {
+    @include text(
+      $text-size-m,
+      $font-weight-regular,
+      $text-line-height-m,
+      var(--text-primary)
+    );
+  }
+}

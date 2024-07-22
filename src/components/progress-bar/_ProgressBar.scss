@@ -8,5 +8,6 @@
     left: 0;
     border-radius: $radius-full;
     background-color: var(--surface-warning);
+    transition: 0.1s width ease;
   }
 }

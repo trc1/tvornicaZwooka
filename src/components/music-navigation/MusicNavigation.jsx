@@ -6,7 +6,7 @@ import RepeatIcon from "../../assets/icons/RepeatIcon";
 import { useState } from "react";
 
 export default function MusicNavigation() {
-  const [activeIcons, setActiveIcons] = useState([]);
+  const [activeIcons, setActiveIcons] = useState(["shuffle"]);
 
   const handleIconClick = (icon) => {
     setActiveIcons((prev) =>

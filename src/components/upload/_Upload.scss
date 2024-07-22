@@ -2,12 +2,18 @@
   width: 100%;
   height: 100%;
   min-width: 350px;
-  border-radius: $radius-base;
-  border: 1px solid var(--border-primary);
-  padding: $spacing-16;
   @include flexbox(center, center, column, $spacing-16);
   &__wrapper {
+    width: 100%;
     @include flexbox(center, center, column, $spacing-12);
+    border: 1px solid var(--border-primary);
+    border-radius: $radius-base;
+    padding: $spacing-16;
+    transition: 0.3s ease-in-out;
+    flex: 1;
+    &:hover {
+      border: 1px solid var(--border-brand);
+    }
   }
   &__icon-container {
     @include flexbox(center, center, column, $spacing-8);
@@ -45,5 +51,9 @@
       $text-line-height-s,
       var(--text-secondary)
     );
+  }
+  &__file-list {
+    width: 100%;
+    @include flexbox(start, start, column, $spacing-16);
   }
 }
