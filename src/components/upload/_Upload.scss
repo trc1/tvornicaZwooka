@@ -54,6 +54,8 @@
   }
   &__file-list {
     width: 100%;
+    max-height: 324px;
+    overflow-y: auto;
     @include flexbox(start, start, column, $spacing-16);
   }
 }

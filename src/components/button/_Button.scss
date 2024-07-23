@@ -68,9 +68,6 @@
     @include button(small);
     background-color: transparent;
     color: var(--text-primary);
-    &:hover {
-      background-color: var(--surface-primary-active);
-    }
   }
 }
 
