@@ -8,7 +8,7 @@
 //pages
 @import "../pages/login/Login";
 @import "../pages/dashboard/Dashboard";
-@import "../pages/album/Album";
+@import "../pages/playlist/Playlist";
 @import "../pages/podcast/Podcast";
 
 //components
@@ -38,3 +38,10 @@
 @import "../components/checkbox/Checkbox";
 @import "../components/upload/Upload";
 @import "../components/upload-file/UploadFile";
+
+@media (max-width: 480px) {
+  html {
+    overflow-y: auto;
+    font-size: 10px;
+  }
+}

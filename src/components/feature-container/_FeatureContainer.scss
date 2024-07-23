@@ -11,6 +11,7 @@
   &__info-wrapper {
     @include flexbox(start, start, column);
   }
+  &__subtitle,
   &__description {
     @include text(
       $text-size-m,

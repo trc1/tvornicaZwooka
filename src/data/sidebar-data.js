@@ -41,13 +41,13 @@ export const sidebarNavigation = [
     icon: MusicNoteIcon,
     active: false,
     dropdown: false,
+    href: "/playlist",
   },
   {
     name: "Albums",
     icon: VinylIcon,
     active: false,
     dropdown: false,
-    href: "/album",
   },
   {
     name: "Artist",
