@@ -3,7 +3,7 @@ export default function ArtistCard({ image, songName, artist }) {
     <div className="artist-card">
       <img
         src={image}
-        alt="Current song image"
+        alt={`Current song image for ${songName}`}
         className="artist-card__image"
       />
       <div className="artist-card__text-wrapper">

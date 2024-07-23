@@ -6,7 +6,7 @@ export default function CategoryCard({ image, title }) {
       <figure className="category-card">
         <img
           src={image}
-          alt={`Image of ${title}`}
+          alt={`Image of category: ${title}`}
           className="category-card__image"
         />
         <figcaption className="category-card__title">{title}</figcaption>

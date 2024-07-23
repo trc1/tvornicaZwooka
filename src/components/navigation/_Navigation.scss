@@ -1,6 +1,10 @@
+.navigation {
+  width: 100%;
+  flex-grow: 1;
+}
+
 .navigation-wrapper {
   @include flexbox(start, start, column, $spacing-16);
-  flex-grow: 1;
   width: 100%;
   &__list {
     width: inherit;
