@@ -16,7 +16,12 @@
     @include flexbox(center, center, column, $spacing-4);
   }
   &__welcome {
-    @include text($text-size-xl, $font-weight-semibold, $text-line-height-xl);
+    @include text(
+      $text-size-xl,
+      $font-weight-semibold,
+      $text-line-height-xl,
+      var(--text-primary)
+    );
   }
 
   &__signup {
