@@ -18,6 +18,9 @@
     &:hover {
       opacity: 0.7;
     }
+    &:focus-within > svg > path {
+      stroke: var(--surface-brand);
+    }
 
     &:hover:first-child,
     &:hover:last-child {

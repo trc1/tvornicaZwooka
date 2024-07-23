@@ -17,25 +17,44 @@ export default function MusicNavigation() {
   };
 
   return (
-    <nav className="music-navigation">
-      <ol className="music-navigation__wrapper">
+    <nav className="music-navigation" aria-label="Music player controls">
+      <ol className="music-navigation__wrapper" role="list">
         <li
           className={
             activeIcons.includes("shuffle")
               ? "music-navigation__icon music-navigation__icon--active"
               : "music-navigation__icon"
           }
+          role="button"
+          aria-pressed={activeIcons.includes("shuffle")}
+          aria-label="Shuffle"
           onClick={() => handleIconClick("shuffle")}
+          tabIndex="0"
         >
           <ShuffleIcon />
         </li>
-        <li className="music-navigation__icon">
+        <li
+          className="music-navigation__icon"
+          role="button"
+          aria-label="Previous"
+          tabIndex="0"
+        >
           <PrevIcon />
         </li>
-        <li className="music-navigation__icon">
+        <li
+          className="music-navigation__icon"
+          role="button"
+          aria-label="Play/Pause"
+          tabIndex="0"
+        >
           <PlayIcon />
         </li>
-        <li className="music-navigation__icon">
+        <li
+          className="music-navigation__icon"
+          role="button"
+          aria-label="Next"
+          tabIndex="0"
+        >
           <NextIcon />
         </li>
         <li
@@ -44,7 +63,11 @@ export default function MusicNavigation() {
               ? "music-navigation__icon music-navigation__icon--active"
               : "music-navigation__icon"
           }
+          role="button"
+          aria-pressed={activeIcons.includes("repeat")}
+          aria-label="Repeat"
           onClick={() => handleIconClick("repeat")}
+          tabIndex="0"
         >
           <RepeatIcon />
         </li>
