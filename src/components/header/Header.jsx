@@ -20,7 +20,7 @@ export default function Header({ isOpen, setIsOpen }) {
       <div className="header__right">
         <div className="header__button-wrapper">
           <Button
-            className="btn-icon"
+            className="btn-icon menu-icon"
             icon={<MenuIcon />}
             onClick={() => setIsOpen(!isOpen)}
           />
