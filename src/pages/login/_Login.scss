@@ -34,3 +34,36 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .login {
+    &__image {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+  .login {
+    &-form {
+      width: 25rem;
+    }
+    &__image {
+      &-decoration {
+        width: 25rem;
+        height: 25rem;
+        &:first-child {
+          top: -5rem;
+          left: -5rem;
+        }
+        &:nth-child(2) {
+          top: 20rem;
+        }
+      }
+      &-dashboard {
+        width: 30rem;
+        bottom: -2rem;
+      }
+    }
+  }
+}

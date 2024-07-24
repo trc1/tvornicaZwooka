@@ -4,8 +4,8 @@
   border-radius: $radius-minimal;
   background-color: var(--background-secondary);
   &__image {
-    width: 150px;
-    height: 150px;
+    max-width: 9.375rem;
+    
   }
   &__title {
     @include text(
@@ -14,5 +14,13 @@
       $text-line-height-m,
       var(--text-primary)
     );
+  }
+}
+@media screen and (max-width: 1024px) {
+  .category-card {
+    min-width: calc(100% / 4 - 1.25rem);
+    &__image{
+      min-width: 100%;
+    }
   }
 }

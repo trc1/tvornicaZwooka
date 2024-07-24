@@ -42,3 +42,13 @@
     @include flexbox(center, center, column, $spacing-20);
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .podcast {
+    overflow-y: scroll;
+    &__form {
+      flex-direction: column;
+      margin-bottom: 2.5rem;
+    }
+  }
+}

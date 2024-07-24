@@ -38,3 +38,9 @@
 @import "../components/checkbox/Checkbox";
 @import "../components/upload/Upload";
 @import "../components/upload-file/UploadFile";
+
+@media screen and (max-width: 900px) {
+    html {
+      font-size: 14px;
+    }
+  }

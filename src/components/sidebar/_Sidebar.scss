@@ -1,14 +1,26 @@
 .sidebar {
-  flex: 1;
   max-width: 18.8rem;
   padding: $spacing-24;
   @include flexbox(start, start, column, $spacing-24);
   background-color: var(--background-secondary);
   border-right: 1px solid var(--border-primary-lighter);
   overflow-y: auto;
-
   &__header {
     width: 100%;
     padding: $spacing-12 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100vh;
+    &--open {
+      display: flex;
+    }
   }
 }

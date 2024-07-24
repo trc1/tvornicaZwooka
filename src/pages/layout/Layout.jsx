@@ -6,6 +6,7 @@ import Login from "../login/Login";
 import { useState } from "react";
 export default function Layout() {
   const [isLogin, setIsLogin] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const isPodcastPage = location.pathname.includes("podcast");
 
@@ -15,9 +16,9 @@ export default function Layout() {
         <Login setIsLogin={setIsLogin} isLogin={isLogin} />
       ) : (
         <div className="content">
-          <Sidebar />
+          <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
           <div className="main">
-            <Header />
+            <Header isOpen={isOpen} setIsOpen={setIsOpen} />
             <Outlet />
             {!isPodcastPage && <MusicControl />}
           </div>

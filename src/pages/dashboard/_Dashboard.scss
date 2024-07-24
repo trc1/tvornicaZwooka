@@ -37,6 +37,7 @@
   &__carusel {
     @include flexbox(start, center, row, $spacing-20);
     width: 100%;
+    flex-wrap: wrap;
   }
 }
 

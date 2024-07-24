@@ -4,8 +4,9 @@ import BellIcon from "../../assets/icons/BellIcon";
 import Button from "../button/Button";
 import Input from "../input/Input";
 import Profile from "../profile/Profile";
+import MenuIcon from "../../assets/icons/MenuIcon";
 
-export default function Header() {
+export default function Header({ isOpen, setIsOpen }) {
   return (
     <header className="header">
       <div className="header__left">
@@ -18,6 +19,11 @@ export default function Header() {
       </div>
       <div className="header__right">
         <div className="header__button-wrapper">
+          <Button
+            className="btn-icon"
+            icon={<MenuIcon />}
+            onClick={() => setIsOpen(!isOpen)}
+          />
           <Button className="btn-icon" icon={<GreaphNeutralIcon />} />
           <Button className="btn-icon" icon={<BellIcon />} />
         </div>
