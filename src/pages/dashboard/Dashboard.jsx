@@ -21,8 +21,8 @@ export default function Dashboard() {
             <h3 className="section__title">Podcasts</h3>
             <Button className="btn-small-outline" label="View All" />
           </header>
-          <div className="podcast-carusel">
-            <div className="podcast-carusel__overflow">
+          <div className="section__carusel">
+            <div className="section__overflow">
               {podcast.map((item) => (
                 <PodcastCard
                   key={item.title}
@@ -43,9 +43,15 @@ export default function Dashboard() {
             <Button className="btn-small-outline" label="Disabled" />
           </header>
           <div className="section__carusel">
-            {featured.map((item, index) => (
-              <CategoryCard key={index} image={item.image} title={item.title} />
-            ))}
+            <div className="section__overflow">
+              {featured.map((item, index) => (
+                <CategoryCard
+                  key={index}
+                  image={item.image}
+                  title={item.title}
+                />
+              ))}
+            </div>
           </div>
         </section>
         <section className="section">
@@ -54,9 +60,15 @@ export default function Dashboard() {
             <Button className="btn-small-outline" label="View All" />
           </header>
           <div className="section__carusel">
-            {category.map((item, index) => (
-              <CategoryCard key={index} image={item.image} title={item.title} />
-            ))}
+            <div className="section__overflow">
+              {category.map((item, index) => (
+                <CategoryCard
+                  key={index}
+                  image={item.image}
+                  title={item.title}
+                />
+              ))}
+            </div>
           </div>
         </section>
       </div>

@@ -35,16 +35,11 @@
     flex-grow: 1;
   }
   &__carusel {
-    @include flexbox(start, center, row, $spacing-20);
+    @include flexbox(start, center, row);
     width: 100%;
-    flex-wrap: wrap;
+    overflow-x: scroll;
+    padding-right: $spacing-36;
   }
-}
-
-.podcast-carusel {
-  @include flexbox(start, center, row);
-  width: 100%;
-  overflow-x: scroll;
   &__overflow {
     @include flexbox(center, center, row, $spacing-24);
   }
