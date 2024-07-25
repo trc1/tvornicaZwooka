@@ -4,9 +4,13 @@
   height: 100%;
   overflow-y: scroll;
   &__featured {
-    @include flexbox(center, start, row, $spacing-24);
     width: 100%;
     padding: $spacing-24 $spacing-36 $spacing-40 $spacing-36;
+  }
+  &__overflow {
+    @include flexbox(start, start, row, $spacing-24);
+    width: 100%;
+    height: 100%;
   }
   &__sections-wrapper {
     @include flexbox(start, center, column, $spacing-32);
@@ -42,5 +46,13 @@
   }
   &__overflow {
     @include flexbox(center, center, row, $spacing-24);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content-section {
+    &__overflow {
+      overflow-x: scroll;
+    }
   }
 }

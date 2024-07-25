@@ -11,9 +11,11 @@ export default function Dashboard() {
   return (
     <div className="content-section">
       <section className="content-section__featured">
-        {feature.map((item) => (
-          <FeatureCard key={item.title} data={item} />
-        ))}
+        <div className="content-section__overflow">
+          {feature.map((item) => (
+            <FeatureCard key={item.title} data={item} />
+          ))}
+        </div>
       </section>
       <div className="content-section__sections-wrapper">
         <section className="section">
